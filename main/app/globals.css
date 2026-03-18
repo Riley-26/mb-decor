@@ -3,9 +3,22 @@
 /* THEME - Custom CSS properties */
 
 @theme {
+    --font-oregano: var(--font-oregano);
+    --font-cormorant-garamond: var(--font-cormorant-garamond);
+    
     --color-light: #ffffff;
     --color-dark: #000000ee;
-    --background-color: #ffffff;
+    --color-background-color: #F5F2EC;
+
+    --color-primary-dark: #080E1C;
+    --color-primary-mid: #1B2A4A;
+    --color-primary-light: #8FADD4;
+    --color-secondary-dark: #2C1F14;
+    --color-secondary-mid: #A8896A;
+    --color-secondary-light: #E8DDD0;
+    --color-tertiary-dark: #2A152A;
+    --color-tertiary-mid: #6B3F6B;
+    --color-tertiary-light: #C9A8C9;
 
     --radius-card: 12px;
 
@@ -17,6 +30,18 @@
 @layer base {
     *, *::before, *::after {
         box-sizing: border-box;
+    }
+
+    h1 {
+        @apply text-8xl font-light;
+    }
+
+    h2 {
+        @apply text-6xl font-light tracking-tight;
+    }
+
+    p {
+        @apply text-3xl font-normal;
     }
 }
 

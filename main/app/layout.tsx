@@ -1,11 +1,22 @@
 import type { Metadata } from "next"
-import { Noto_Sans } from "next/font/google"
+import { Cormorant_Garamond, DM_Sans, Oregano } from "next/font/google"
 import "./globals.css"
 import Script from "next/script"
 
-const notoSans = Noto_Sans({
+const dmSans = DM_Sans({
     subsets: ["latin"],
     variable: "--font-noto-sans",
+})
+
+const oregano = Oregano({
+    subsets: ["latin"],
+    weight: "400",
+    variable: "--font-oregano",
+})
+
+const cormorantGaramond = Cormorant_Garamond({
+    subsets: ["latin"],
+    variable: "--font-cormorant-garamond",
 })
 
 export const metadata: Metadata = {
@@ -20,7 +31,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" suppressHydrationWarning>
-            <body className={`${notoSans.className} antialiased`}>
+            <body className={`${dmSans.className} ${oregano.variable} ${cormorantGaramond.variable} antialiased`}>
                 <Script src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}`} />
                 <Script id="google-analytics" strategy="afterInteractive">
                     {`
