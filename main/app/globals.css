@@ -1,0 +1,29 @@
+@import "tailwindcss"; 
+
+/* THEME - Custom CSS properties */
+
+@theme {
+    --color-light: #ffffff;
+    --color-dark: #000000ee;
+    --background-color: #ffffff;
+
+    --radius-card: 12px;
+
+    --shadow-card: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+/* BASE STYLES - Global resets and default element styles */
+
+@layer base {
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+}
+
+/* COMPONENTS - Reusable class patterns */
+
+@layer components {
+    .card {
+        @apply bg-white rounded-card shadow-card p-6;
+    }
+}
