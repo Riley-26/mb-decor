@@ -80,8 +80,38 @@ export default function Home() {
 
             {/* SERVICES SNAPSHOT */}
             <section id="about" className="overflow-hidden min-h-180 sm:min-h-220 flex flex-col xl:flex-row items-center justify-center relative">
-                <div className="z-40 container w-full flex items-center justify-center">
-                    <h2 className="text-primary-mid max-w-6xl">From small domestic projects to large commercial ones, we've got you covered.</h2>
+                <div className="z-40 container w-full max-w-7xl flex flex-col gap-12 items-center justify-center">
+                    <h2 className="text-primary-mid">From small domestic projects to large commercial ones, we've got you covered.</h2>
+                    <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 w-full text-dark">
+                        <div className="flex flex-col gap-4">
+                            <div className="w-76 h-68 bg-black/50 rounded-2xl" />
+                            <div className="ml-2 flex flex-col gap-2">
+                                <h3>Interior painting</h3>
+                                <p className="text-lg! max-w-66">We'll transform your space with a fresh coat of paint, leaving it looking brand new.</p>
+                            </div>
+                        </div>
+                        <div className="flex flex-col gap-4">
+                            <div className="w-76 h-68 bg-black/50 rounded-2xl" />
+                            <div className="ml-2 flex flex-col gap-2">
+                                <h3>Exterior painting</h3>
+                                <p className="text-lg! max-w-66"></p>
+                            </div>
+                        </div>
+                        <div className="flex flex-col gap-4">
+                            <div className="w-76 h-68 bg-black/50 rounded-2xl" />
+                            <div className="ml-2 flex flex-col gap-2">
+                                <h3>Dustless sanding</h3>
+                                <p className="text-lg! max-w-66"></p>
+                            </div>
+                        </div>
+                        <div className="flex flex-col gap-4">
+                            <div className="w-76 h-68 bg-black/50 rounded-2xl" />
+                            <div className="ml-2 flex flex-col gap-2">
+                                <h3>Wallpapering</h3>
+                                <p className="text-lg! max-w-66"></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
