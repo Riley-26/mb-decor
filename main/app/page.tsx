@@ -1,10 +1,11 @@
 import { Metadata } from "next"
 import { } from "react"
-import { MapPin, Wrench, House } from "lucide-react"
+import { MapPin, Wrench, House, CheckIcon } from "lucide-react"
 import Button from "@/components/ui/Button"
 import Image from "next/image"
 import Navbar from "@/components/layout/Navbar"
 import Link from "next/link"
+import Video from "@/components/layout/Video"
 
 export const metadata: Metadata = {
     title: "MB Decor",
@@ -18,12 +19,10 @@ export default function Home() {
 
             {/* HERO */}
             <section id="hero" className="overflow-hidden min-h-180 sm:min-h-220 flex flex-col xl:flex-row items-center justify-center relative">
-                <div className="z-40 w-full h-180 sm:h-220 flex items-end p-24 justify-between mx-8">
+                <div className="z-40 w-full h-180 sm:h-220 flex items-end p-24 justify-center gap-48 mx-8">
                     <h1 className="max-w-4xl text-shadow-lg"><span className="text-secondary-light font-oregano italic text-9xl">Impeccable</span> Work, Zero <span className="text-secondary-light font-oregano italic text-9xl">Disruption</span></h1>
-                    <div
-                        className="max-w-xl z-50 flex flex-col gap-4 md:gap-6 items-start px-4 relative"
-                    >
-                        <p>Perfection-painting services. Interior and exterior, domestic and commercial.</p>
+                    <div className="max-w-xl z-50 flex flex-col gap-4 md:gap-6 items-start px-4 relative">
+                        <p>Immaculate painting services. Interior and exterior, domestic and commercial.</p>
                         <p>Contact us today for a free quote.</p>
                         <hr className="border-none bg-neutral-200/60 w-full h-0.5" />
                         <div className="hidden sm:flex flex-col sm:flex-row gap-4 w-max" >
@@ -47,7 +46,7 @@ export default function Home() {
                 </div>
 
                 <div className="absolute flex items-center justify-center gap-2 group brightness-60 w-full px-8">
-                    <Image alt="Hero image" fetchPriority="high" src="/assets/hero1.jpg" width={1800} height={800} priority className="object-cover h-200 rounded-4xl shadow-lg shadow-black/10" />
+                    <Image alt="Hero image" fetchPriority="high" src="/assets/hero1-upscaled.jpg" width={1800} height={800} priority className="object-cover h-200 rounded-4xl shadow-lg shadow-black/10" />
                 </div>
             </section>
 
@@ -81,7 +80,7 @@ export default function Home() {
             {/* SERVICES SNAPSHOT */}
             <section id="about" className="overflow-hidden min-h-180 sm:min-h-220 flex flex-col xl:flex-row items-center justify-center relative">
                 <div className="z-40 container w-full max-w-7xl flex flex-col gap-12 items-center justify-center">
-                    <h2 className="text-primary-mid">From small domestic projects to large commercial ones, we've got you covered.</h2>
+                    <h2 className="text-primary-mid max-w-6xl mr-auto">Flawless finishes with meticulous attention to detail.</h2>
                     <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 w-full text-dark">
                         <div className="flex flex-col gap-4">
                             <div className="w-76 h-68 bg-black/50 rounded-2xl" />
@@ -94,31 +93,81 @@ export default function Home() {
                             <div className="w-76 h-68 bg-black/50 rounded-2xl" />
                             <div className="ml-2 flex flex-col gap-2">
                                 <h3>Exterior painting</h3>
-                                <p className="text-lg! max-w-66"></p>
+                                <p className="text-lg! max-w-66">Restorative and protective treatments for your property.</p>
                             </div>
                         </div>
                         <div className="flex flex-col gap-4">
                             <div className="w-76 h-68 bg-black/50 rounded-2xl" />
                             <div className="ml-2 flex flex-col gap-2">
                                 <h3>Dustless sanding</h3>
-                                <p className="text-lg! max-w-66"></p>
+                                <p className="text-lg! max-w-66">Creating no mess and no dust, whilst providing a perfect surface for painting.</p>
                             </div>
                         </div>
                         <div className="flex flex-col gap-4">
                             <div className="w-76 h-68 bg-black/50 rounded-2xl" />
                             <div className="ml-2 flex flex-col gap-2">
                                 <h3>Wallpapering</h3>
-                                <p className="text-lg! max-w-66"></p>
+                                <p className="text-lg! max-w-66">Seamless wallpaper application and removal.</p>
                             </div>
                         </div>
+                    </div>
+                    <div className="flex items-center w-full gap-8">
+                        <hr className="w-full max-w-24 border-none bg-secondary-mid/30 h-0.5" />
+                        <Button size="md" color="secondaryMid" to="/services" roundSize="sm" className="w-max">
+                            View all services
+                        </Button>
                     </div>
                 </div>
             </section>
 
             {/* WHY MB DECOR */}
-            <section id="about" className="overflow-hidden min-h-180 sm:min-h-220 flex flex-col xl:flex-row items-center justify-center relative">
-                <div className="z-40 container w-full flex items-center justify-center bg-neutral-200/40">
-                    <h2 className="text-primary-mid">WHY MB DECOR</h2>
+            <section id="about" className="overflow-hidden min-h-180 sm:min-h-220 flex flex-col xl:flex-row items-center justify-center relative mt-16">
+                <div className="z-40 container w-full flex flex-col items-center justify-center gap-12 max-w-6xl">
+                    <div className="grid grid-cols-2 items-end gap-12">
+                        <h2 className="text-primary-mid">Prestigious painting services in London and the South East</h2>
+                        <p className="text-primary-mid text-2xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil nulla eius maxime magni sunt labore eligendi consequatur itaque quos voluptatibus.</p>
+                    </div>
+                    <div className="grid grid-cols-2 gap-12 text-primary-dark">
+                        <Video id="why-mb" src={"/assets/why-mb.mov"} className={"w-full aspect-square object-cover rounded-2xl brightness-90"} />
+                        <ul className="flex flex-col items-center justify-center gap-8 bg-secondary-light px-8 rounded-2xl">
+                            <li className="flex items-center gap-6">
+                                <div className="min-w-12 min-h-12 bg-secondary-mid/30 rounded-full text-secondary-mid flex items-center justify-center">
+                                    <CheckIcon className="text-base" />
+                                </div>
+                                <p className="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                            </li>
+                            <li className="flex items-center gap-6">
+                                <div className="min-w-12 min-h-12 bg-secondary-mid/30 rounded-full text-secondary-mid flex items-center justify-center">
+                                    <CheckIcon className="text-base" />
+                                </div>
+                                <p className="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                            </li>
+                            <li className="flex items-center gap-6">
+                                <div className="min-w-12 min-h-12 bg-secondary-mid/30 rounded-full text-secondary-mid flex items-center justify-center">
+                                    <CheckIcon className="text-base" />
+                                </div>
+                                <p className="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                            </li>
+                            <li className="flex items-center gap-6">
+                                <div className="min-w-12 min-h-12 bg-secondary-mid/30 rounded-full text-secondary-mid flex items-center justify-center">
+                                    <CheckIcon className="text-base" />
+                                </div>
+                                <p className="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                            </li>
+                            <li className="flex items-center gap-6">
+                                <div className="min-w-12 min-h-12 bg-secondary-mid/30 rounded-full text-secondary-mid flex items-center justify-center">
+                                    <CheckIcon className="text-base" />
+                                </div>
+                                <p className="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                            </li>
+                            <li className="flex items-center gap-6">
+                                <div className="min-w-12 min-h-12 bg-secondary-mid/30 rounded-full text-secondary-mid flex items-center justify-center">
+                                    <CheckIcon className="text-base" />
+                                </div>
+                                <p className="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
