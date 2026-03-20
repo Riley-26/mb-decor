@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { Cormorant_Garamond, DM_Sans, Oregano } from "next/font/google"
+import { Cormorant_Garamond, DM_Sans, Merienda, Oregano } from "next/font/google"
 import "./globals.css"
 import Script from "next/script"
 
@@ -14,9 +14,10 @@ const oregano = Oregano({
     variable: "--font-oregano",
 })
 
-const cormorantGaramond = Cormorant_Garamond({
+const merienda = Merienda({
     subsets: ["latin"],
-    variable: "--font-cormorant-garamond",
+    weight: "400",
+    variable: "--font-merienda",
 })
 
 export const metadata: Metadata = {
@@ -31,7 +32,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" suppressHydrationWarning>
-            <body className={`${dmSans.className} ${oregano.variable} ${cormorantGaramond.variable} antialiased`}>
+            <body className={`${dmSans.className} ${oregano.variable} ${merienda.variable} antialiased`}>
                 <Script src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}`} />
                 <Script id="google-analytics" strategy="afterInteractive">
                     {`

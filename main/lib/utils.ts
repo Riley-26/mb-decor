@@ -10,7 +10,8 @@ export const scrollToSection = (sectionId: string) => {
 export const sendFormData = (e: any) => {
     e.preventDefault()
     const formData = e.target;
-    const name = formData.elements["name"]?.value || "";
+    const firstName = formData.elements["first-name"]?.value || "";
+    const lastName = formData.elements["last-name"]?.value || "";
     const email = formData.elements["email"]?.value || "";
     const subject = formData.elements["subject"]?.value || "";
     const message = formData.elements["message"]?.value || "";
@@ -19,7 +20,7 @@ export const sendFormData = (e: any) => {
         emailjs.send(
             process.env.EMAILJS_SERVICE_ID || "",
             process.env.EMAILJS_TEMPLATE_ID || "",
-            { name, email, subject, message },
+            { name: `${firstName} ${lastName}`, email, subject, message },
             process.env.EMAILJS_PUBLIC_KEY || ""
         )
         alert("Message sent successfully")

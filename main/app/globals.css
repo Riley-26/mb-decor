@@ -4,7 +4,7 @@
 
 @theme {
     --font-oregano: var(--font-oregano);
-    --font-cormorant-garamond: var(--font-cormorant-garamond);
+    --font-merienda: var(--font-merienda);
     
     --color-light: #ffffff;
     --color-dark: #000000ee;
@@ -22,7 +22,7 @@
 
     --radius-card: 12px;
 
-    --shadow-card: 0 4px 24px rgba(0,0,0,0.08);
+    --shadow-card: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 /* BASE STYLES - Global resets and default element styles */
@@ -33,19 +33,23 @@
     }
 
     h1 {
-        @apply text-8xl font-light;
+        @apply text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-light;
     }
 
     h2 {
-        @apply text-6xl font-light tracking-tight;
+        @apply text-4xl lg:text-5xl xl:text-6xl font-light tracking-tight;
     }
 
     h3 {
-        @apply text-3xl font-normal tracking-tight;
+        @apply text-xl md:text-2xl lg:text-3xl font-normal tracking-tight;
     }
 
     p {
-        @apply text-3xl font-normal;
+        @apply text-lg sm:text-xl xl:text-2xl 2xl:text-3xl font-normal;
+    }
+
+    button {
+        @apply cursor-pointer;
     }
 }
 
@@ -54,5 +58,23 @@
 @layer components {
     .card {
         @apply bg-white rounded-card shadow-card p-6;
+    }
+
+    .nav-link {
+        @apply text-sm font-normal;
+    }
+    
+    .nav-link::after {
+        @apply border-b border-b-secondary-mid;
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        transition: all 0.2s ease;
+    }
+    
+    .nav-link:hover::after {
+        width: 100%;
     }
 }
