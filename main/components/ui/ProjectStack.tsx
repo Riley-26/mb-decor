@@ -170,7 +170,7 @@ export default function ProjectStack() {
             </div>
 
             {/* Navigation buttons */}
-            <div className="flex items-center gap-3 mt-8">
+            <div className="flex items-center gap-3 mt-14 sm:mt-8">
                 <button
                     onClick={prev}
                     disabled={busy}
