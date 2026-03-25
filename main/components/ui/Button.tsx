@@ -46,6 +46,11 @@ export default function Button({
             outline:
                 "bg-transparent border-tertiary-dark hover:bg-tertiary-dark focus:ring-tertiary-dark/20 text-neutral-300",
         },
+        primaryDark: {
+            full: "bg-primary-dark border-primary-dark hover:-translate-y-0.5 focus:ring-primary-dark/20 hover:shadow-lg text-white",
+            outline:
+                "bg-transparent border-primary-dark hover:bg-primary-dark focus:ring-neutral-400/20 text-white hover:text-white",
+        },
         primaryMid: {
             full: "bg-primary-mid border-primary-mid hover:-translate-y-0.5 focus:ring-primary-mid/20 hover:shadow-lg text-white",
             outline:

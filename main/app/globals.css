@@ -5,6 +5,7 @@
 @theme {
     --font-oregano: var(--font-oregano);
     --font-merienda: var(--font-merienda);
+    --font-pt-serif: var(--font-pt-serif);
     
     --color-light: #ffffff;
     --color-dark: #000000ee;
@@ -33,19 +34,19 @@
     }
 
     h1 {
-        @apply text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-light;
+        @apply text-4xl sm:text-6xl xl:text-7xl font-light tracking-tight text-primary-mid;
     }
 
     h2 {
-        @apply text-4xl lg:text-5xl xl:text-6xl font-light tracking-tight;
+        @apply text-4xl lg:text-5xl xl:text-6xl font-normal sm:font-light tracking-tight text-primary-mid;
     }
 
     h3 {
-        @apply text-xl md:text-2xl lg:text-3xl font-normal tracking-tight;
+        @apply text-xl md:text-2xl xl:text-3xl font-normal tracking-tight text-primary-mid;
     }
 
     p {
-        @apply text-lg sm:text-xl xl:text-2xl 2xl:text-3xl font-normal;
+        @apply text-lg sm:text-xl xl:text-2xl font-normal;
     }
 
     button {
@@ -61,7 +62,7 @@
     }
 
     .nav-link {
-        @apply text-sm font-normal;
+        @apply text-base font-normal;
     }
     
     .nav-link::after {

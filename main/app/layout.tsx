@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { Cormorant_Garamond, DM_Sans, Merienda, Oregano } from "next/font/google"
+import { Cormorant_Garamond, DM_Sans, Merienda, Oregano, PT_Sans, PT_Serif } from "next/font/google"
 import "./globals.css"
 import Script from "next/script"
 
@@ -14,10 +14,10 @@ const oregano = Oregano({
     variable: "--font-oregano",
 })
 
-const merienda = Merienda({
+const ptSerif = PT_Serif({
     subsets: ["latin"],
     weight: "400",
-    variable: "--font-merienda",
+    variable: "--font-pt-serif",
 })
 
 export const metadata: Metadata = {
@@ -32,7 +32,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" suppressHydrationWarning>
-            <body className={`${dmSans.className} ${oregano.variable} ${merienda.variable} antialiased`}>
+            <body className={`${dmSans.className} ${oregano.variable} ${ptSerif.variable} antialiased`}>
                 <Script src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}`} />
                 <Script id="google-analytics" strategy="afterInteractive">
                     {`

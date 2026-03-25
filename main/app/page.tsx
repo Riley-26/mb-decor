@@ -1,6 +1,6 @@
 import { Metadata } from "next"
 import { } from "react"
-import { ArrowRight, QuoteIcon, PaintBucket, FlaskConicalOff, EarOff, Focus, Paintbrush, Clock } from "lucide-react"
+import { ArrowRight, QuoteIcon, PaintBucket, FlaskConicalOff, EarOff, Focus, Paintbrush, Clock, Sparkles } from "lucide-react"
 import Button from "@/components/ui/Button"
 import Image from "next/image"
 import Navbar from "@/components/layout/Navbar"
@@ -22,7 +22,7 @@ export default function Home() {
             {/* HERO */}
             <section id="hero" className="overflow-hidden md:mb-24 min-h-180 sm:min-h-220 flex flex-col xl:flex-row items-center md:justify-center pt-6 md:pt-0 relative mx-4 xl:mx-0">
                 <div className="text-center sm:text-left z-40 w-full h-150 sm:h-180 md:h-220 flex flex-col justify-center sm:justify-end 2xl:flex-row 2xl:items-end px-5 sm:px-8 sm:py-24 2xl:justify-center gap-8 sm:gap-16 2xl:gap-48 mx-8">
-                    <h1 className="min-w-max text-shadow-lg sm:pl-4 mt-8 sm:mt-0"><span className="text-secondary-light font-oregano italic text-5xl xs:text-6xl sm:text-7xl lg:text-8xl xl:text-9xl">Impeccable</span> Work,<br/> Zero <span className="text-secondary-light font-oregano italic text-5xl xs:text-6xl sm:text-7xl lg:text-8xl xl:text-9xl">Disruption</span></h1>
+                    <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl min-w-max text-shadow-lg sm:pl-4 mt-8 sm:mt-0 text-light!"><span className="text-secondary-light font-normal">Impeccable</span> Work,<br/> Flawless <span className="text-secondary-light font-normal">Finishes</span></h1>
                     <div className="mx-auto sm:mx-0 max-w-sm sm:max-w-xl z-50 flex flex-col gap-2 sm:gap-4 md:gap-6 items-center sm:items-start sm:px-4 relative">
                         <div className="flex flex-col gap-2">
                             <p>Immaculate painting services. Interior and exterior, domestic and commercial.</p>
@@ -51,7 +51,7 @@ export default function Home() {
                 </div>
 
                 <div className="absolute flex items-center justify-center gap-2 group brightness-30 sm:brightness-50 2xl:brightness-60 w-full sm:px-4 xl:px-8">
-                    <Image alt="Hero image" fetchPriority="high" src="/assets/hero1-upscaled.jpg" width={1800} height={800} priority className="object-cover h-150 sm:h-180 md:h-200 rounded-4xl shadow-lg shadow-black/10" />
+                    <Image alt="Hero image" fetchPriority="high" src="/assets/home/hero1-upscaled.jpg" width={1800} height={800} priority className="object-cover h-150 sm:h-180 md:h-200 rounded-4xl shadow-lg shadow-black/10" />
                 </div>
             </section>
 
@@ -61,46 +61,46 @@ export default function Home() {
                     {/* Body - mobile */}
                     <div className="col-span-2 relative flex xl:hidden h-max xl:h-108 w-full rounded-2xl bg-secondary-light px-4 py-6 sm:p-6 md:p-8 overflow-hidden">
                         <div className="flex flex-col gap-6 md:gap-8">
-                            <h2 className="text-primary-mid xl:max-w-lg 2xl:max-w-xl shrink-0 z-45">Specialist painting services, with a focus on tidiness.</h2>
-                            <p className="text-primary-mid max-w-3xl xl:max-w-md 2xl:max-w-lg z-45">Beautiful, premium results whilst causing no disruption. You wouldn't have even thought we were there.</p>
+                            <h2 className="text-primary-mid xl:max-w-lg 2xl:max-w-xl shrink-0 z-45">Specialist painting services - producing the perfect finish.</h2>
+                            <p className="text-primary-mid max-w-3xl xl:max-w-md 2xl:max-w-lg z-45">Beautiful, premium results with tidiness in mind. The quality decoration that your house deserves.</p>
                             <Link href="/about" className="text-primary-mid text-base sm:text-lg underline hover:text-primary-light transition-colors duration-75 w-max">Learn more</Link>
                         </div>
                         <div className="hidden xl:block absolute -right-48 2xl:-right-32 -top-8">
-                            <Image alt="Value proposition image" src="/assets/hero2.jpg" width={400} height={400} className="absolute right-0 object-cover h-124 w-124 rounded-full z-43 brightness-90" />
+                            <Image alt="Value proposition image" src="/assets/home/hero1.jpg" width={400} height={400} className="absolute right-0 object-cover h-124 w-124 rounded-full z-43 brightness-90" />
                             <div className="h-136 w-136 bg-secondary-mid/30 rounded-full z-42 inset-0 -translate-y-6" />
                         </div>
                     </div>
                     {/* Stats square */}
-                    <div className="col-span-2 sm:col-span-1 relative overflow-hidden bg-secondary-dark w-full h-72 sm:h-84 xl:h-108 rounded-2xl p-6 xl:p-8 flex flex-col-reverse gap-4 lg:flex-row lg:items-end lg:justify-between xl:gap-8">
+                    <div className="col-span-2 sm:col-span-1 relative overflow-hidden bg-primary-dark w-full h-72 sm:h-84 xl:h-108 rounded-2xl p-6 xl:p-8 flex flex-col-reverse gap-4 lg:flex-row lg:items-end lg:justify-between xl:gap-8">
                         <div className="flex flex-col mb-4 z-50">
-                            <span className="text-6xl sm:text-7xl lg:text-8xl font-extralight text-secondary-mid">20+</span>
+                            <span className="text-6xl sm:text-7xl lg:text-8xl font-extralight text-secondary-mid">25+</span>
                             <p className="text-base lg:text-xl text-secondary-light">Years of experience</p>
                         </div>
                         <div className="flex flex-col mb-4 z-50">
-                            <span className="text-4xl lg:text-5xl font-light text-secondary-mid mb-2">150+</span>
-                            <p className="text-base lg:text-xl text-secondary-light">Projects completed</p>
+                            <span className="text-4xl lg:text-5xl font-light text-secondary-mid mb-2">100%</span>
+                            <p className="text-base lg:text-xl text-secondary-light">Customer <br className="sm:hidden" /> Satisfaction</p>
                         </div>
                         <div className="block sm:hidden absolute -right-36 sm:-right-32 -top-4 md:-top-18">
-                            <Image alt="Value proposition image" src="/assets/hero2.jpg" width={400} height={400} className="absolute right-0 object-cover h-84 md:h-124 w-84 md:w-124 rounded-full z-43 brightness-90" />
+                            <Image alt="Value proposition image" src="/assets/home/hero1.jpg" width={400} height={400} className="absolute right-0 object-cover h-84 md:h-124 w-84 md:w-124 rounded-full z-43 brightness-90" />
                             <div className="h-92 md:h-136 w-92 md:w-136 bg-secondary-mid/30 rounded-full z-42 inset-0 -translate-y-4 md:-translate-y-6" />
                         </div>
                     </div>
                     {/* Image - mobile */}
                     <div className="col-span-1 hidden sm:flex xl:hidden relative h-72 sm:h-84 xl:h-108 w-full rounded-2xl bg-secondary-light p-8 overflow-hidden">
                         <div className="absolute md:-right-48 lg:-right-32 -top-8 md:-top-18">
-                            <Image alt="Value proposition image" src="/assets/hero2.jpg" width={400} height={400} className="absolute right-0 object-cover h-84 md:h-124 w-84 md:w-124 rounded-full z-43 brightness-90" />
+                            <Image alt="Value proposition image" src="/assets/home/hero1.jpg" width={400} height={400} className="absolute right-0 object-cover h-84 md:h-124 w-84 md:w-124 rounded-full z-43 brightness-90" />
                             <div className="h-96 md:h-136 w-96 md:w-136 bg-secondary-mid/30 rounded-full z-42 inset-0 -translate-y-4 md:-translate-y-6" />
                         </div>
                     </div>
                     {/* Body - desktop */}
                     <div className="col-span-2 relative hidden xl:flex h-84 xl:h-108 w-full rounded-2xl bg-secondary-light p-8 overflow-hidden">
                         <div className="flex flex-col gap-8">
-                            <h2 className="text-primary-mid xl:max-w-lg 2xl:max-w-xl shrink-0 z-45">Specialist painting services, with a focus on tidiness.</h2>
-                            <p className="text-primary-mid max-w-3xl xl:max-w-md 2xl:max-w-lg z-45 text-2xl">Beautiful, premium results whilst causing no disruption. You wouldn't have even thought we were there.</p>
+                            <h2 className="text-primary-mid xl:max-w-lg 2xl:max-w-xl shrink-0 z-45">Specialist painting services - producing the perfect finish.</h2>
+                            <p className="text-primary-mid max-w-3xl xl:max-w-md 2xl:max-w-lg z-45">Beautiful, premium results with tidiness in mind. The quality decoration that your house deserves.</p>
                             <Link href="/about" className="text-primary-mid text-lg underline hover:text-primary-light transition-colors duration-75 w-max">Learn more</Link>
                         </div>
                         <div className="hidden xl:block absolute -right-48 2xl:-right-32 -top-8">
-                            <Image alt="Value proposition image" src="/assets/hero2.jpg" width={400} height={400} className="absolute right-0 object-cover h-124 w-124 rounded-full z-43 brightness-90" />
+                            <Image alt="Value proposition image" src="/assets/home/hero1.jpg" width={400} height={400} className="absolute right-0 object-cover h-124 w-124 rounded-full z-43 brightness-90" />
                             <div className="h-136 w-136 bg-secondary-mid/30 rounded-full z-42 inset-0 -translate-y-6" />
                         </div>
                     </div>
@@ -110,34 +110,34 @@ export default function Home() {
             {/* SERVICES SNAPSHOT */}
             <section id="services" className="overflow-hidden py-16 min-h-180 sm:min-h-220 flex flex-col xl:flex-row items-center justify-center relative px-4 xl:px-0">
                 <div className="z-40 max-w-3xl mx-8 container w-full text-center xl:text-left xl:max-w-7xl flex flex-col gap-12 items-center justify-center">
-                    <h2 className="text-primary-mid max-w-6xl mr-auto">Flawless finishes with meticulous attention to detail.</h2>
+                    <h2 className="text-primary-mid max-w-6xl mr-auto">Reliable services that always result in perfect paintwork.</h2>
                     <div className="max-w-xl md:max-w-2xl xl:max-w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 xl:gap-4 w-full text-dark">
                         <div className="flex flex-col items-center xl:items-start gap-4">
                             <div className="w-full max-w-64 lg:max-w-76 h-56 lg:h-68 bg-black/50 rounded-2xl" />
                             <div className="xl:ml-2 flex flex-col gap-2">
-                                <h3>Interior painting</h3>
-                                <p className="text-base md:text-lg max-w-66">We'll transform your space with a fresh coat of paint, leaving it looking brand new.</p>
+                                <h3 className="xl:text-3xl">Interior painting</h3>
+                                <p className="text-base md:text-lg xl:text-xl max-w-66">Transforming your space with a fresh coat of paint, leaving it looking brand new.</p>
                             </div>
                         </div>
                         <div className="flex flex-col items-center xl:items-start gap-4">
                             <div className="w-full max-w-64 lg:max-w-76 h-56 lg:h-68 bg-black/50 rounded-2xl" />
                             <div className="xl:ml-2 flex flex-col gap-2">
-                                <h3>Exterior painting</h3>
-                                <p className="text-base md:text-lg max-w-66">Restorative and protective treatments for your property.</p>
+                                <h3 className="xl:text-3xl">Exterior painting</h3>
+                                <p className="text-base md:text-lg xl:text-xl max-w-66">Restorative and protective treatments for your property.</p>
                             </div>
                         </div>
                         <div className="flex flex-col items-center xl:items-start gap-4">
                             <div className="w-full max-w-64 lg:max-w-76 h-56 lg:h-68 bg-black/50 rounded-2xl" />
                             <div className="xl:ml-2 flex flex-col gap-2">
-                                <h3>Dustless sanding</h3>
-                                <p className="text-base md:text-lg max-w-66">Creating no mess and no dust, whilst providing a perfect surface for painting.</p>
+                                <h3 className="xl:text-3xl">Dustless sanding</h3>
+                                <p className="text-base md:text-lg xl:text-xl max-w-66">Creating minimal mess and dust, whilst providing a perfect surface for painting.</p>
                             </div>
                         </div>
                         <div className="flex flex-col items-center xl:items-start gap-4">
                             <div className="w-full max-w-64 lg:max-w-76 h-56 lg:h-68 bg-black/50 rounded-2xl" />
                             <div className="xl:ml-2 flex flex-col gap-2">
-                                <h3>Wallpapering</h3>
-                                <p className="text-base md:text-lg max-w-66">Seamless wallpaper application and removal.</p>
+                                <h3 className="xl:text-3xl">Wallpapering</h3>
+                                <p className="text-base md:text-lg xl:text-xl max-w-66">Fabric, Vinyl and Paper wallpaper application and removal.</p>
                             </div>
                         </div>
                     </div>
@@ -157,12 +157,12 @@ export default function Home() {
                     <div className="flex flex-col xl:grid xl:grid-cols-2 items-end gap-8 lg:gap-12">
                         <h2 className="text-primary-mid">Prestigious painting services in London and the South East.</h2>
                         <p className="text-primary-mid">
-                            Clients trust us to deliver flawless results, with no disruption to their daily lives. We're proud to have built a reputation for high-quality, reliability and cleanliness.
+                            Clients trust us to deliver flawless results, noting the tidiness and quality of our work. We're proud to have built a reputation for high-quality, reliability and cleanliness.
                         </p>
                     </div>
                     <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 xl:gap-12 text-primary-dark">
-                        <Video id="why-mb" src={"/assets/why-mb.mov"} className={"w-full object-cover rounded-2xl brightness-90 h-96 lg:h-142"} />
-                        <ul className="flex flex-col xl:items-center justify-center gap-6 lg:gap-8 bg-secondary-light border-l-4 border-secondary-mid px-4 md:px-8 rounded-2xl py-8">
+                        <Video id="why-mb" src={"/assets/home/why-mb.mov"} className={"w-full object-cover rounded-2xl brightness-90 h-96 lg:h-142"} />
+                        <ul className="flex flex-col xl:items-start justify-center gap-6 lg:gap-8 bg-secondary-light border-l-4 border-secondary-mid px-4 md:px-8 rounded-2xl py-8">
                             <li className="flex items-center gap-6">
                                 <div className="min-w-12 min-h-12 bg-secondary-mid/30 rounded-full text-secondary-mid flex items-center justify-center">
                                     <PaintBucket className="text-base" />
@@ -173,7 +173,7 @@ export default function Home() {
                                 <div className="min-w-12 min-h-12 bg-secondary-mid/30 rounded-full text-secondary-mid flex items-center justify-center">
                                     <FlaskConicalOff className="text-base" />
                                 </div>
-                                <p className="text-lg lg:text-xl">No airborne dust, chemicals or debris. Better for your health and the environment.</p>
+                                <p className="text-lg lg:text-xl">Reduced airborne dust and debris. Better for your health and the environment.</p>
                             </li>
                             <li className="flex items-center gap-6">
                                 <div className="min-w-12 min-h-12 bg-secondary-mid/30 rounded-full text-secondary-mid flex items-center justify-center">
@@ -189,9 +189,9 @@ export default function Home() {
                             </li>
                             <li className="flex items-center gap-6">
                                 <div className="min-w-12 min-h-12 bg-secondary-mid/30 rounded-full text-secondary-mid flex items-center justify-center">
-                                    <EarOff className="text-base" />
+                                    <Sparkles className="text-base" />
                                 </div>
-                                <p className="text-lg lg:text-xl">Low noise levels and minimal disruption to your daily life.</p>
+                                <p className="text-lg lg:text-xl">Clean and tidy - we leave the space better than we found it.</p>
                             </li>
                             <li className="flex items-center gap-6">
                                 <div className="min-w-12 min-h-12 bg-secondary-mid/30 rounded-full text-secondary-mid flex items-center justify-center">
@@ -203,6 +203,8 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+
+
 
             {/* FEATURED PROJECTS */}
             <section id="projects" className="overflow-hidden min-h-180 flex flex-col items-center justify-center relative py-24 mx-4 xl:mx-0">
@@ -231,13 +233,13 @@ export default function Home() {
                 <div className="z-40 container w-full flex flex-col items-center justify-center max-w-5xl xl:max-w-6xl">
                     <h2 className="text-primary-mid text-center">Hear from some of our clients.</h2>
                     <hr className="border-none bg-neutral-300/50 w-full max-w-xs h-0.5 my-8" />
-                    <div className="flex flex-col md:flex-row items-center gap-2 md:gap-6 bg-secondary-light rounded-2xl mb-8 border-b-4 md:border-b-0 md:border-r-4 border-secondary-dark">
-                        <div className="hidden md:flex flex-col items-end justify-end relative gap-2 bg-secondary-dark rounded-2xl p-4 min-w-64 2xl:min-w-72 h-48 xl:h-64 mx-2 lg:mx-0">
+                    <div className="flex flex-col md:flex-row items-center gap-2 md:gap-6 bg-secondary-light rounded-2xl mb-8 border-b-4 md:border-b-0 md:border-r-4 border-primary-dark">
+                        <div className="hidden md:flex flex-col items-end justify-end relative gap-2 bg-primary-dark rounded-2xl p-4 min-w-64 2xl:min-w-72 h-48 xl:h-64 mx-2 lg:mx-0">
                             <QuoteIcon fill="currentColor" className="w-16 h-16 xl:w-24 xl:h-24 absolute top-4 right-4 text-secondary-mid opacity-20" />
                             <p className="text-secondary-mid text-2xl 2xl:text-3xl text-center font-medium">John Doe</p>
                             <p className="text-secondary-mid text-lg 2xl:text-xl text-center font-medium">London</p>
                         </div>
-                        <p className="text-primary-mid max-w-4xl rounded-2xl m-8">
+                        <p className="text-primary-mid max-w-4xl rounded-2xl m-8 xl:text-2xl">
                             &quot;Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem dolores quas ipsa dolorum earum accusantium asperiores consectetur architecto omnis veritatis excepturi at cumque vel consequuntur, sunt quos, labore itaque consequatur.&quot;
                         </p>
                         <div className="flex flex-col md:hidden items-center justify-center mb-6">
@@ -292,7 +294,7 @@ export default function Home() {
                         </form>
                     </div>
                     <div className="hidden xl:block brightness-80 bg-secondary-dark rounded-2xl overflow-hidden max-h-172">
-                        <Image src="/assets/hero2.jpg" alt="CTA" width={500} height={500} className="h-full object-cover z-20" />
+                        <Image src="/assets/home/hero1.jpg" alt="CTA" width={500} height={500} className="h-full object-cover z-20" />
                     </div>
                 </div>
             </section>

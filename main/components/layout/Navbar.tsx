@@ -15,17 +15,8 @@ type NavLink =
 
 const navLinks: NavLink[] = [
     { label: "About", href: "/about" },
-    {
-        label: "Services",
-        href: null,
-        dropdown: [
-            { label: "Interior/Exterior Painting", href: "/painting" },
-            { label: "Dustless Sanding", href: "/dustless-sanding" },
-            { label: "Wallpapering", href: "/wallpapering" }
-        ],
-    },
+    { label: "Services", href: "/services" },
     { label: "Projects", href: "/projects" },
-    { label: "Testimonials", href: "/testimonials" },
     { label: "Contact", href: "/contact" },
 ]
 
@@ -48,67 +39,13 @@ export default function Navbar() {
             <div
                 className={`bg-primary-dark mt-16 ${openBurger ? "translate-x-0" : "translate-x-100"} -translate-y-16 transition duration-400 fixed top-0 right-0 h-125 w-64 z-95 flex flex-col items-center justify-center gap-6 shadow-black shadow-2xl rounded-bl-xl border-l-4 border-l-secondary-mid`}
             >
-                <ul className="w-full text-xl flex flex-col items-center gap-0">
+                <ul className="w-full text-xl flex flex-col items-center gap-0 text-light">
                     {navLinks.map((link, i) => {
-                        if (link.dropdown) {
-                            return (
-                                <li key={link.label} className="w-full flex flex-col items-center">
-                                    {/* Divider above */}
-                                    {i > 0 && <div className="w-4/5 h-px bg-neutral-700/40 my-1" />}
-
-                                    <button
-                                        className="w-full flex items-center justify-center gap-1.5 py-3 text-sm"
-                                        onClick={() => setServicesOpen(!servicesOpen)}
-                                    >
-                                        {link.label}
-                                        <ChevronDown
-                                            size={12}
-                                            className={`transition-transform duration-200 ${servicesOpen ? "rotate-180" : ""}`}
-                                        />
-                                    </button>
-
-                                    {/* Animated sub-menu */}
-                                    <AnimatePresence initial={false}>
-                                        {servicesOpen && (
-                                            <motion.div
-                                                key="services-dropdown"
-                                                initial={{ height: 0, opacity: 0 }}
-                                                animate={{ height: "auto", opacity: 1 }}
-                                                exit={{ height: 0, opacity: 0 }}
-                                                transition={{ duration: 0.25, ease: "easeInOut" }}
-                                                className="overflow-hidden w-full"
-                                            >
-                                                <ul className="flex flex-col items-center gap-1 bg-black/50 border-y border-neutral-700/30 py-3 w-full">
-                                                    {link.dropdown.map((sub) => (
-                                                        <li key={sub.href}>
-                                                            <Link
-                                                                href={sub.href}
-                                                                className="nav-link text-xs! text-light/60 hover:text-light! transition-colors duration-150 relative"
-                                                                onClick={() => {
-                                                                    setOpenBurger(false)
-                                                                    setIsOpen(false)
-                                                                    setServicesOpen(false)
-                                                                }}
-                                                            >
-                                                                {sub.label}
-                                                            </Link>
-                                                        </li>
-                                                    ))}
-                                                </ul>
-                                            </motion.div>
-                                        )}
-                                    </AnimatePresence>
-
-                                    {/* Divider below */}
-                                    <div className="w-4/5 h-px bg-neutral-700/40 my-1" />
-                                </li>
-                            )
-                        }
                         return (
                             <li key={link.href} className="w-full flex justify-center">
                                 <Link
                                     className="nav-link cursor-pointer relative flex items-center gap-1 py-3"
-                                    href={link.href}
+                                    href={link.href || ""}
                                     onClick={() => {
                                         setOpenBurger(false)
                                         setIsOpen(false)
@@ -131,38 +68,9 @@ export default function Navbar() {
                 <ul className="hidden xl:flex items-center gap-6 px-4 py-2 text-dark">
                     {
                         navLinks.map((link) => {
-                            if (link.dropdown) {
-                                return (
-                                    <li key={link.label} className="relative group h-full flex items-center">
-                                        {/* Trigger */}
-                                        <button className="cursor-pointer relative flex items-center gap-1.5">
-                                            {link.label}
-                                            <ChevronDown
-                                                size={12}
-                                                className="transition-transform duration-200 group-hover:rotate-180"
-                                            />
-                                        </button>
-
-                                        {/* Dropdown panel */}
-                                        <div className="absolute pt-4 top-full -left-8 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 translate-y-1 group-hover:translate-y-0">
-                                            <div className="rounded-b-2xl bg-neutral-100 border border-secondary-mid/30 shadow-xl shadow-black/50 min-w-72 flex flex-col py-1">
-                                                {link.dropdown.map((sub) => (
-                                                    <Link
-                                                        key={sub.href}
-                                                        href={sub.href}
-                                                        className="px-5 py-3 hover:bg-secondary-mid/10 transition-colors duration-150 whitespace-nowrap"
-                                                    >
-                                                        {sub.label}
-                                                    </Link>
-                                                ))}
-                                            </div>
-                                        </div>
-                                    </li>
-                                )
-                            }
                             return (
                                 <li key={link.label} className="text-base">
-                                    <Link href={link.href || ""}>
+                                    <Link href={link.href || ""} className="nav-link cursor-pointer relative">
                                         {link.label}
                                     </Link>
                                 </li>

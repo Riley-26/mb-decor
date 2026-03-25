@@ -6,7 +6,7 @@ export default function Footer() {
     const currentYear = new Date().getFullYear()
 
     return (
-        <footer className="relative bg-black border-t border-neutral-800/50 py-8 px-4 z-50">
+        <footer className="relative bg-black border-t border-neutral-800/50 pb-12 pt-8 px-4 z-50 text-light">
             <div className="max-w-6xl mx-auto">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-4">
                     {/* Brand */}
@@ -18,9 +18,14 @@ export default function Footer() {
                     </Link>
 
                     {/* Copyright */}
-                    <span className="opacity-70 text-sm text-center">
-                        © {currentYear} MB Prestige Painting & Decor. All rights reserved.
-                    </span>
+                    <div className="flex flex-col gap-2 items-center">
+                        <span className="opacity-70 text-sm text-center">
+                            © {currentYear} MB Prestige Painting & Decor. All rights reserved.
+                        </span>
+                        <a href="https://readwebstudio.co.uk" target="_blank" className="absolute bottom-4 opacity-70 text-xs text-center hover:underline">
+                            Website by Read Web Studio
+                        </a>
+                    </div>
 
                     {/* Social */}
                     <div className="flex flex-col gap-2 items-center">
