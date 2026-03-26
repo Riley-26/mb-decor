@@ -13,7 +13,7 @@ const projects = [
         description:
             "Full interior repaint of a five-bedroom Victorian townhouse. Every room finished to the highest standard with zero disruption to the family.",
         href: "/projects/kensington-townhouse",
-        image: "/assets/hero1-upscaled.jpg",
+        image: "/assets/home/hero1.jpg",
     },
     {
         id: 2,
@@ -22,7 +22,7 @@ const projects = [
         description:
             "Complete exterior restoration and interior transformation of a Grade II listed country estate, preserving its heritage character.",
         href: "/projects/surrey-estate",
-        image: "/assets/hero2.jpg",
+        image: "/assets/home/hero1.jpg",
     },
     {
         id: 3,
@@ -31,7 +31,7 @@ const projects = [
         description:
             "Full fit-out repaint of a 12,000 sq ft commercial office space completed over a single weekend to avoid business disruption.",
         href: "/projects/canary-wharf-office",
-        image: "/assets/hero1-upscaled.jpg",
+        image: "/assets/home/hero1.jpg",
     },
 ]
 

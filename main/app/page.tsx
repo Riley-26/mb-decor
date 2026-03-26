@@ -22,7 +22,7 @@ export default function Home() {
             {/* HERO */}
             <section id="hero" className="overflow-hidden md:mb-24 min-h-180 sm:min-h-220 flex flex-col xl:flex-row items-center md:justify-center pt-6 md:pt-0 relative mx-4 xl:mx-0">
                 <div className="text-center sm:text-left z-40 w-full h-150 sm:h-180 md:h-220 flex flex-col justify-center sm:justify-end 2xl:flex-row 2xl:items-end px-5 sm:px-8 sm:py-24 2xl:justify-center gap-8 sm:gap-16 2xl:gap-48 mx-8">
-                    <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl min-w-max text-shadow-lg sm:pl-4 mt-8 sm:mt-0 text-light!"><span className="text-secondary-light font-normal">Impeccable</span> Work,<br/> Flawless <span className="text-secondary-light font-normal">Finishes</span></h1>
+                    <h1 className="text-4xl sm:text-6xl lg:text-7xl xl:text-8xl min-w-max text-shadow-lg sm:pl-4 mt-8 sm:mt-0 text-light!"><span className="text-secondary-light font-normal">Impeccable</span> Work,<br/> Flawless <span className="text-secondary-light font-normal">Finishes</span></h1>
                     <div className="mx-auto sm:mx-0 max-w-sm sm:max-w-xl z-50 flex flex-col gap-2 sm:gap-4 md:gap-6 items-center sm:items-start sm:px-4 relative">
                         <div className="flex flex-col gap-2">
                             <p>Immaculate painting services. Interior and exterior, domestic and commercial.</p>
@@ -203,8 +203,6 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-
-
 
             {/* FEATURED PROJECTS */}
             <section id="projects" className="overflow-hidden min-h-180 flex flex-col items-center justify-center relative py-24 mx-4 xl:mx-0">

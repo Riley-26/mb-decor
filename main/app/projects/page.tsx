@@ -77,16 +77,16 @@ export default function ProjectsPage() {
             {/* MAIN PROJECTS */}
             <section id="main-projects" className="pt-32 min-h-180 sm:min-h-220 flex flex-col xl:flex-row items-center justify-center relative px-4 2xl:px-0">
                 <div className="z-40 container w-full flex flex-col items-center justify-center gap-12 max-w-7xl relative">
-                    <div className="flex flex-col items-center gap-6 z-30 my-16">
+                    <div className="flex flex-col items-center gap-6 z-30 my-8 lg:my-16">
                         <h1 className="text-primary-mid mr-auto">Main Projects</h1>
                     </div>
                     <ul className="flex flex-col gap-32">
                         {
                             mainProjects.map((project) => (
-                                <li key={project.title} className="flex justify-center items-center w-full gap-16 bg-secondary-light border-l-6 border-secondary-dark rounded-2xl p-8 shadow-xl">
-                                    <div className="w-1/2 flex flex-col gap-8">
+                                <li key={project.title} className="flex flex-col-reverse lg:flex-row justify-center items-center w-full max-w-xl lg:max-w-full gap-6 lg:gap-16 bg-secondary-light border-l-6 border-secondary-dark rounded-2xl px-6 lg:px-8 py-6 lg:py-4 xl:py-8 shadow-xl">
+                                    <div className="lg:w-1/2 flex flex-col gap-4 xl:gap-8">
                                         <span className="text-secondary-mid text-lg lg:text-xl xl:text-2xl font-medium">0{project.id}</span>
-                                        <h2 className="xl:text-5xl">{project.title}</h2>
+                                        <h2 className="text-2xl lg:text-3xl xl:text-5xl">{project.title}</h2>
                                         <p>{project.description}</p>
                                         <ul className="flex flex-col gap-4 mt-2">
                                             {
@@ -104,7 +104,7 @@ export default function ProjectsPage() {
                                             }
                                         </ul>
                                     </div>
-                                    <div className="w-1/2">
+                                    <div className="lg:w-1/2">
                                         <Image src="/assets/about/about-hero.jpg" alt="Domestic Work 1" width={600} height={600} className="object-cover rounded-2xl z-30" />
                                     </div>
                                 </li>
@@ -125,7 +125,7 @@ export default function ProjectsPage() {
                             miscProjects.map((project) => (
                                 <li key={project.title} className="flex justify-center items-center w-full">
                                     <div className="shadow-xl rounded-2xl overflow-hidden relative group">
-                                        <Image src={project.image} alt={`Domestic Work ${project.id}`}  width={500} height={500} className="w-full object-cover z-30 group-hover:scale-105 transition-all duration-200" />
+                                        <Image src={project.image} alt={`Domestic Work ${project.id}`}  width={500} height={500} className="w-full object-cover z-30 group-hover:scale-105 group-active:scale-105 transition-all duration-200" />
                                         <div className="flex flex-col items-center justify-center gap-4 w-full h-full bg-transparent opacity-0 absolute top-0 left-0 group-hover:opacity-100 group-hover:bg-black/70 transition-colors duration-100">
                                             <p className="text-xl xl:text-3xl text-transparent z-50 group-hover:text-white transition-colors duration-200">{project.title}</p>
                                             <a href="/" className="text-transparent z-50 group-hover:text-neutral-300 hover:bg-neutral-400/40 transition-colors duration-200 border-2 border-neutral-400 rounded-full p-2 cursor-pointer"><Facebook className="w-6 h-6" /></a>

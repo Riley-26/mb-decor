@@ -48,7 +48,7 @@ export default function AboutPage() {
                         </div>
                     </div>
                     <div className="xl:absolute top-1/2 xl:-translate-y-1/2 right-0 group z-30 mx-auto xl:mx-0 w-full max-w-sm sm:max-w-lg lg:max-w-max">
-                        <Image src="/assets/about-hero.jpg" alt="About Hero" width={700} height={700} className="object-cover rounded-4xl shadow-lg shadow-black/10 " />
+                        <Image src="/assets/about/about-hero.jpg" alt="About Hero" width={700} height={700} className="object-cover rounded-4xl shadow-lg shadow-black/10 " />
                     </div>
                 </div>
             </section>
