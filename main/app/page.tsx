@@ -123,34 +123,42 @@ export default function Home() {
                         <h2 className="text-primary-mid max-w-6xl mr-auto">Reliable services that always result in perfect paintwork.</h2>
                     </Reveal>
                     <div className="max-w-xl md:max-w-2xl xl:max-w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 xl:gap-4 w-full text-dark">
-                        <Reveal from="up" delay={0.1} className="flex flex-col items-center xl:items-start gap-4">
-                            <div className="w-full max-w-64 lg:max-w-76 h-56 lg:h-68 bg-black/50 rounded-2xl" />
+                        <div className="flex flex-col items-center xl:items-start gap-4">
+                            <div className="w-full max-w-64 lg:max-w-76 h-56 lg:h-68 bg-black/50 rounded-2xl overflow-hidden shadow-lg">
+                                <Image width={350} height={350} src="/assets/home/interior.jpg" alt="Interior paintwork" className="object-cover brightness-90" />
+                            </div>
                             <div className="xl:ml-2 flex flex-col gap-2">
                                 <h3 className="xl:text-3xl">Interior painting</h3>
                                 <p className="text-base md:text-lg xl:text-xl max-w-66">Transforming your space with a fresh coat of paint, leaving it looking brand new.</p>
                             </div>
-                        </Reveal>
-                        <Reveal from="up" delay={0.2} className="flex flex-col items-center xl:items-start gap-4">
-                            <div className="w-full max-w-64 lg:max-w-76 h-56 lg:h-68 bg-black/50 rounded-2xl" />
+                        </div>
+                        <div className="flex flex-col items-center xl:items-start gap-4">
+                            <div className="w-full max-w-64 lg:max-w-76 h-56 lg:h-68 bg-black/50 rounded-2xl overflow-hidden shadow-lg">
+                                <Image width={350} height={350} src="/assets/home/exterior.jpg" alt="Exterior paintwork" className="object-cover brightness-90" />
+                            </div>
                             <div className="xl:ml-2 flex flex-col gap-2">
                                 <h3 className="xl:text-3xl">Exterior painting</h3>
                                 <p className="text-base md:text-lg xl:text-xl max-w-66">Restorative and protective treatments for your property.</p>
                             </div>
-                        </Reveal>
-                        <Reveal from="up" delay={0.4} className="flex flex-col items-center xl:items-start gap-4">
-                            <div className="w-full max-w-64 lg:max-w-76 h-56 lg:h-68 bg-black/50 rounded-2xl" />
+                        </div>
+                        <div className="flex flex-col items-center xl:items-start gap-4">
+                            <div className="w-full max-w-64 lg:max-w-76 h-56 lg:h-68 bg-black/50 rounded-2xl overflow-hidden shadow-lg">
+                                <Image width={350} height={350} src="/assets/home/exterior.jpg" alt="Exterior paintwork" className="object-cover brightness-90" />
+                            </div>
                             <div className="xl:ml-2 flex flex-col gap-2">
                                 <h3 className="xl:text-3xl">Wallpapering</h3>
                                 <p className="text-base md:text-lg xl:text-xl max-w-66">Fabric, Vinyl and Paper wallpaper application and removal.</p>
                             </div>
-                        </Reveal>
-                        <Reveal from="up" delay={0.3} className="flex flex-col items-center xl:items-start gap-4">
-                            <div className="w-full max-w-64 lg:max-w-76 h-56 lg:h-68 bg-black/50 rounded-2xl" />
+                        </div>
+                        <div className="flex flex-col items-center xl:items-start gap-4">
+                            <div className="w-full max-w-64 lg:max-w-76 h-56 lg:h-68 bg-black/50 rounded-2xl overflow-hidden shadow-lg">
+                                <Image width={350} height={350} src="/assets/home/exterior.jpg" alt="Exterior paintwork" className="object-cover brightness-90" />
+                            </div>
                             <div className="xl:ml-2 flex flex-col gap-2">
                                 <h3 className="xl:text-3xl">Dustless sanding</h3>
                                 <p className="text-base md:text-lg xl:text-xl max-w-66">Creating minimal mess and dust, whilst providing a perfect surface for painting.</p>
                             </div>
-                        </Reveal>
+                        </div>
                     </div>
                     <div className="flex items-center justify-center xl:justify-start w-full gap-8">
                         <hr className="w-full max-w-24 border-none bg-secondary-mid/30 h-0.5" />

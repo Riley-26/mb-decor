@@ -34,7 +34,7 @@
     }
 
     h1 {
-        @apply text-4xl sm:text-6xl xl:text-7xl font-light tracking-tight text-primary-mid;
+        @apply text-4xl sm:text-6xl xl:text-7xl font-normal sm:font-light tracking-tight text-primary-mid;
     }
 
     h2 {
