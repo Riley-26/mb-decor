@@ -3,8 +3,10 @@ import Button from "@/components/ui/Button"
 import { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowDown, ArrowRight, BrushCleaning, ChevronDown, ChevronRight, CornerDownLeft, Focus, Paintbrush, PaintBucket, PaintRoller, SearchCheck, UserCheck } from "lucide-react"
+import { ArrowDown, ArrowRight, BrushCleaning, ChevronDown, CornerDownLeft, Focus, Paintbrush, PaintBucket, PaintRoller, SearchCheck, UserCheck } from "lucide-react"
+import AccordionItem from "@/components/ui/AccordionItem"
 import Footer from "@/components/layout/Footer"
+import Reveal from "@/components/ui/Reveal"
 
 export const metadata: Metadata = {
     title: "About Us | MB Prestige Painting",
@@ -24,41 +26,43 @@ export default function AboutPage() {
                 <div className="z-40 container w-full flex flex-col gap-16 xl:gap-0 max-w-6xl xl:max-w-7xl relative text-center xl:text-left">
                     <div className="z-40">
                         <span className="font-semibold text-secondary-mid sm:ml-4">ABOUT US</span>
-                        <h1 className="mt-2 xl:max-w-3xl">Experienced perfection painting.</h1>
-                        <div className="flex flex-col gap-2 mt-6 sm:mt-8 xl:max-w-2xl rounded-2xl">
+                        <Reveal from="left">
+                            <h1 className="mt-2 xl:max-w-3xl">Experienced perfection painting.</h1>
+                        </Reveal>
+                        <Reveal from="left" delay={0.2} className="flex flex-col gap-2 mt-6 sm:mt-8 xl:max-w-2xl rounded-2xl">
                             <p>Delivering high quality painting and decorating services for over 25 years.</p>
                             <p>Operating in London, Kent and the South East.</p>
-                        </div>
+                        </Reveal>
                         <hr className="border-none bg-neutral-300/50 w-full max-w-xs lg:max-w-sm mx-auto xl:mx-0 h-0.5 my-6" />
-                        <div className="hidden lg:flex flex-col gap-2 sm:gap-4 w-full max-w-sm mx-auto xl:ml-0" >
+                        <Reveal from="left" delay={0.4} className="hidden lg:flex flex-col gap-2 sm:gap-4 w-full max-w-sm mx-auto xl:ml-0" >
                             <Button size="lg" color="primaryDark" to="/contact" roundSize="sm" className="">
                                 Request a Quote
                             </Button>
                             <Button size="lg" variant="outline" color="secondaryMid" to="/projects" roundSize="sm" className=" text-dark!">
                                 Projects
                             </Button>
-                        </div>
-                        <div className="flex lg:hidden flex-col gap-2 sm:gap-4 w-full max-w-xs lg:max-w-sm mx-auto xl:ml-0" >
+                        </Reveal>
+                        <Reveal from="left" delay={0.4} className="flex lg:hidden flex-col gap-2 sm:gap-4 w-full max-w-xs lg:max-w-sm mx-auto xl:ml-0" >
                             <Button size="sm" color="primaryDark" to="/contact" roundSize="sm" className="py-3 sm:py-4 mx-auto xl:mx-0 w-54 sm:w-64">
                                 Request a Quote
                             </Button>
                             <Button size="sm" variant="outline" color="secondaryMid" to="/projects" roundSize="sm" className="py-3 sm:py-4 mx-auto xl:mx-0 w-54 sm:w-64 text-dark!">
                                 Projects
                             </Button>
-                        </div>
+                        </Reveal>
                     </div>
-                    <div className="xl:absolute top-1/2 xl:-translate-y-1/2 right-0 group z-30 mx-auto xl:mx-0 w-full max-w-sm sm:max-w-lg lg:max-w-max">
+                    <Reveal from="left" delay={0.1} className="xl:absolute top-1/2 xl:-translate-y-1/2 right-0 group z-30 mx-auto xl:mx-0 w-full max-w-sm sm:max-w-lg lg:max-w-max">
                         <Image src="/assets/about/about-hero.jpg" alt="About Hero" width={700} height={700} className="object-cover rounded-4xl shadow-lg shadow-black/10 " />
-                    </div>
+                    </Reveal>
                 </div>
             </section>
 
             {/* STORY */}
             <section id="story" className="py-32 min-h-180 sm:min-h-220 flex flex-col xl:flex-row items-center justify-center relative px-4 2xl:px-0 bg-background-color/80">
                 <div className="z-40 container w-full flex flex-col justify-center gap-12 max-w-2xl lg:max-w-4xl xl:max-w-7xl relative">
-                    <div className="flex flex-col items-center gap-6 z-30 max-w-4xl">
+                    <Reveal from="left" className="flex flex-col items-center gap-6 z-30 max-w-4xl">
                         <h2>How we've grown to be able to deliver perfect results.</h2>
-                    </div>
+                    </Reveal>
                     <div className="grid grid-cols-2 xl:grid-cols-3 grid-rows-2 gap-4 min-h-120 w-full">
                         <div className="col-span-2 md:col-span-1 row-span-1 bg-secondary-light rounded-2xl w-full overflow-hidden p-4 flex flex-col gap-4">
                             <h3>Practice</h3>
@@ -89,38 +93,38 @@ export default function AboutPage() {
             {/* APPROACH */}
             <section id="approach" className="py-32 min-h-180 sm:min-h-220 flex flex-col xl:flex-row items-center justify-center relative px-4 2xl:px-0">
                 <div className="z-40 container w-full flex flex-col justify-center gap-12 max-w-8xl relative">
-                    <div className="flex flex-col items-center gap-6 z-30">
+                    <Reveal from="left" className="flex flex-col items-center gap-6 z-30">
                         <h2 className="text-primary-mid mr-auto max-w-5xl text-center xl:text-left">A modern approach that always results in a flawless finish.</h2>
-                    </div>
+                    </Reveal>
                     <div className="max-w-xl md:max-w-2xl xl:max-w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 xl:gap-4 w-full text-dark mx-auto">
-                        <div className="flex flex-col items-center xl:items-start gap-4 w-full pb-12 p-4 lg:p-6 bg-primary-dark rounded-2xl text-secondary-light">
+                        <Reveal delay={0.1} className="flex flex-col items-center xl:items-start gap-4 w-full pb-12 p-4 lg:p-6 bg-primary-dark rounded-2xl text-secondary-light">
                             <div className="flex items-center justify-center bg-primary-mid/50 rounded-full p-2 border border-secondary-mid/40">
                                 <BrushCleaning strokeWidth={1.5} className="w-8 h-8" />
                             </div>
                             <h3 className="text-secondary-light">01 - Preparation</h3>
                             <p className="text-base lg:text-lg text-center xl:text-start">We prepare the surface and the environment to make sure that we can work at our best, while keeping the mess to a minimum.</p>
-                        </div>
-                        <div className="flex flex-col items-center xl:items-start gap-4 w-full pb-12 p-4 lg:p-6 bg-primary-dark rounded-2xl text-secondary-light">
+                        </Reveal>
+                        <Reveal delay={0.2} className="flex flex-col items-center xl:items-start gap-4 w-full pb-12 p-4 lg:p-6 bg-primary-dark rounded-2xl text-secondary-light">
                             <div className="flex items-center justify-center bg-primary-mid/50 rounded-full p-2 border border-secondary-mid/40">
                                 <PaintRoller strokeWidth={1.5} className="w-8 h-8" />
                             </div>
                             <h3 className="text-secondary-light">02 - Application</h3>
                             <p className="text-base lg:text-lg text-center xl:text-start">We apply the paint optimally to look perfect whilst maximising its lifespan.</p>
-                        </div>
-                        <div className="flex flex-col items-center xl:items-start gap-4 w-full pb-12 p-4 lg:p-6 bg-primary-dark rounded-2xl text-secondary-light">
+                        </Reveal>
+                        <Reveal delay={0.3} className="flex flex-col items-center xl:items-start gap-4 w-full pb-12 p-4 lg:p-6 bg-primary-dark rounded-2xl text-secondary-light">
                             <div className="flex items-center justify-center bg-primary-mid/50 rounded-full p-2 border border-secondary-mid/40">
                                 <Paintbrush strokeWidth={1.5} className="w-8 h-8" />
                             </div>
                             <h3 className="text-secondary-light">03 - Finishing</h3>
                             <p className="text-base lg:text-lg text-center xl:text-start">After the paint is applied, we ensure that it is finished to a high standard and that you are happy with the result.</p>
-                        </div>
-                        <div className="flex flex-col items-center xl:items-start gap-4 w-full pb-12 p-4 lg:p-6 bg-primary-dark rounded-2xl text-secondary-light">
+                        </Reveal>
+                        <Reveal delay={0.4} className="flex flex-col items-center xl:items-start gap-4 w-full pb-12 p-4 lg:p-6 bg-primary-dark rounded-2xl text-secondary-light">
                             <div className="flex items-center justify-center bg-primary-mid/50 rounded-full p-2 border border-secondary-mid/40">
                                 <SearchCheck strokeWidth={1.5} className="w-8 h-8" />
                             </div>
                             <h3 className="text-secondary-light">04 - Inspection</h3>
                             <p className="text-base lg:text-lg text-center xl:text-start">Through touch-ups and your feedback, we achieve the perfect finish.</p>
-                        </div>
+                        </Reveal>
                     </div>
                     <div className="flex items-center justify-center xl:justify-start w-full gap-8">
                         <hr className="w-full max-w-24 border-none bg-secondary-mid/30 h-0.5" />
@@ -139,23 +143,20 @@ export default function AboutPage() {
                         <h2 className="text-primary-mid">Property types that we focus on.</h2>
                         <p>We have worked on both domestic and commercial projects across London and the South East, from single rooms to large-scale office and retail spaces.</p>
                     </div>
-                    <div className="flex flex-col lg:flex-row justify-center items-center w-full gap-16">
-                        <div className=" w-full md:w-1/2 max-w-sm md:max-w-lg">
+                    <div className="flex flex-col lg:flex-row justify-center items-center w-full gap-16 lg:h-114">
+                        <div className="w-full md:w-1/2 max-w-sm md:max-w-xl">
                             <Image src="/assets/about/about-hero.jpg" alt="Domestic Work 1" width={600} height={600} className="object-cover rounded-2xl z-30" />
                         </div>
-                        <div className="md:my-6 flex flex-col gap-12 w-full md:w-1/2 max-w-sm md:max-w-md">
-                            <div className="flex items-center justify-between border-b-2 border-secondary-mid pb-2 md:pb-4">
-                                <h3 className="lg:text-2xl">Domestic Work</h3>
-                                <ChevronRight strokeWidth={1.5} className="w-6 h-6" />
-                            </div>
-                            <div className="flex items-center justify-between border-b-2 border-secondary-mid pb-2 md:pb-4">
-                                <h3 className="lg:text-2xl">Commercial Work</h3>
-                                <ChevronRight strokeWidth={1.5} className="w-6 h-6" />
-                            </div>
-                            <div className="flex items-center justify-between border-b-2 border-secondary-mid pb-2 md:pb-4">
-                                <h3 className="lg:text-2xl">Heritage Work</h3>
-                                <ChevronRight strokeWidth={1.5} className="w-6 h-6" />
-                            </div>
+                        <div className="md:my-6 flex flex-col gap-10 w-full md:w-1/2 max-w-sm md:max-w-md">
+                            <AccordionItem name="Domestic Work">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia modi nesciunt cupiditate adipisci eum saepe vel cumque odit dicta obcaecati?
+                            </AccordionItem>
+                            <AccordionItem name="Commercial Work">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia modi nesciunt cupiditate adipisci eum saepe vel cumque odit dicta obcaecati?
+                            </AccordionItem>
+                            <AccordionItem name="Heritage Work">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia modi nesciunt cupiditate adipisci eum saepe vel cumque odit dicta obcaecati?
+                            </AccordionItem>
                             <Button size="md" color="primaryDark" to="/contact" roundSize="sm" className="w-max hidden md:block mx-auto lg:mx-0">
                                 See Projects
                             </Button>
@@ -170,10 +171,10 @@ export default function AboutPage() {
             {/* TRUST */}
             <section id="trust" className="py-32 min-h-180 sm:min-h-220 flex flex-col xl:flex-row items-center justify-center relative px-4 2xl:px-0">
                 <div className="z-40 container w-full flex flex-col justify-center gap-16 max-w-3xl lg:max-w-7xl relative">
-                    <div className="flex flex-col items-center gap-6 z-30 text-center">
+                    <Reveal className="flex flex-col items-center gap-6 z-30 text-center">
                         <h2 className="text-primary-mid">Trusted by homeowners and businesses to deliver a top-notch service.</h2>
-                    </div>
-                    <div className="grid grid-cols-1 lg:grid-cols-3 w-full gap-10 lg:gap-6 max-w-72 lg:max-w-4xl mx-auto">
+                    </Reveal>
+                    <Reveal delay={0.2} className="grid grid-cols-1 lg:grid-cols-3 w-full gap-10 lg:gap-6 max-w-72 lg:max-w-4xl mx-auto">
                         <div className="flex flex-col gap-2">
                             <div className="flex items-center justify-center h-52 lg:h-64 bg-secondary-dark rounded-2xl border-b-6 border-secondary-mid">
                                 <span className="text-5xl lg:text-6xl xl:text-7xl font-light text-secondary-light">25+</span>
@@ -192,7 +193,7 @@ export default function AboutPage() {
                             </div>
                             <h3 className="text-center mt-4 max-w-48 mx-auto">Satisfaction Guaranteed</h3>
                         </div>
-                    </div>
+                    </Reveal>
                 </div>
             </section>
 

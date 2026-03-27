@@ -8,6 +8,7 @@ import Link from "next/link"
 import Video from "@/components/layout/Video"
 import ProjectStack from "@/components/ui/ProjectStack"
 import Footer from "@/components/layout/Footer"
+import Reveal from "@/components/ui/Reveal"
 
 export const metadata: Metadata = {
     title: "MB Decor",
@@ -22,30 +23,38 @@ export default function Home() {
             {/* HERO */}
             <section id="hero" className="overflow-hidden md:mb-24 min-h-180 sm:min-h-220 flex flex-col xl:flex-row items-center md:justify-center pt-6 md:pt-0 relative mx-4 xl:mx-0">
                 <div className="text-center sm:text-left z-40 w-full h-150 sm:h-180 md:h-220 flex flex-col justify-center sm:justify-end 2xl:flex-row 2xl:items-end px-5 sm:px-8 sm:py-24 2xl:justify-center gap-8 sm:gap-16 2xl:gap-48 mx-8">
-                    <h1 className="text-4xl sm:text-6xl lg:text-7xl xl:text-8xl min-w-max text-shadow-lg sm:pl-4 mt-8 sm:mt-0 text-light!"><span className="text-secondary-light font-normal">Impeccable</span> Work,<br/> Flawless <span className="text-secondary-light font-normal">Finishes</span></h1>
+                    <Reveal from="up">
+                        <h1 className="text-4xl sm:text-6xl lg:text-7xl xl:text-8xl min-w-max text-shadow-lg sm:pl-4 mt-8 sm:mt-0 text-light!"><span className="text-secondary-light font-normal">Impeccable</span> Work,<br/> Flawless <span className="text-secondary-light font-normal">Finishes</span></h1>
+                    </Reveal>
                     <div className="mx-auto sm:mx-0 max-w-sm sm:max-w-xl z-50 flex flex-col gap-2 sm:gap-4 md:gap-6 items-center sm:items-start sm:px-4 relative">
-                        <div className="flex flex-col gap-2">
+                        <Reveal from="up" className="flex flex-col gap-2">
                             <p>Immaculate painting services. Interior and exterior, domestic and commercial.</p>
                             <p>Contact us today for a free quote.</p>
-                        </div>
+                        </Reveal>
                         <hr className="border-none bg-neutral-200/60 w-full h-0.5 my-4 max-w-64 sm:max-w-full" />
-                        <div className="hidden sm:flex flex-col sm:flex-row gap-4 w-max" >
+                        <Reveal from="up" delay={0.2} className="hidden sm:flex flex-col sm:flex-row gap-4 w-max" >
                             <Button size="lg" color="light" to="contact" roundSize="sm">
                                 Request a Quote
                             </Button>
                             <Button size="lg" variant="outline" color="secondaryLight" to="/projects" roundSize="sm">
                                 Projects
                             </Button>
-                        </div>
-                        <Link href="/testimonials" className="hidden sm:block text-lg mt-2 text-neutral-300 underline hover:text-neutral-400 transition-colors text-left">Trusted by homeowners and <br className="sm:hidden" />businesses alike.</Link>
+                        </Reveal>
+                        <Reveal from="up" delay={0.4}>
+                            <Link href="/testimonials" className="hidden sm:block text-lg mt-2 text-neutral-300 underline hover:text-neutral-400 transition-colors text-left">Trusted by homeowners and <br className="sm:hidden" />businesses alike.</Link>
+                        </Reveal>
                         <div className="flex flex-col sm:flex-row sm:hidden gap-2 sm:gap-4 w-max mx-auto sm:ml-0" >
-                            <Button size="sm" color="light" to="contact" roundSize="sm" className="px-6!">
-                                Request a Quote
-                            </Button>
-                            <Button size="sm" variant="outline" color="secondaryLight" to="/projects" roundSize="sm" className="px-6!">
-                                Projects
-                            </Button>
-                            <Link href="/testimonials" className="text-base sm:text-lg mt-2 text-neutral-300 underline hover:text-neutral-400 transition-colors text-center sm:text-left">Trusted by homeowners and <br className="sm:hidden" />businesses alike.</Link>
+                            <Reveal from="up" delay={0.2}>
+                                <Button size="sm" color="light" to="contact" roundSize="sm" className="px-6!">
+                                    Request a Quote
+                                </Button>
+                                <Button size="sm" variant="outline" color="secondaryLight" to="/projects" roundSize="sm" className="px-6!">
+                                    Projects
+                                </Button>
+                            </Reveal>
+                            <Reveal from="up" delay={0.4}>
+                                <Link href="/testimonials" className="text-base sm:text-lg mt-2 text-neutral-300 underline hover:text-neutral-400 transition-colors text-center sm:text-left">Trusted by homeowners and <br className="sm:hidden" />businesses alike.</Link>
+                            </Reveal>
                         </div>
                     </div>
                 </div>
@@ -59,7 +68,7 @@ export default function Home() {
             <section id="value" className="overflow-hidden py-16 min-h-180 flex flex-col xl:flex-row items-center justify-center relative px-4 xl:px-0">
                 <div className="z-40 container w-full grid grid-cols-2 xl:grid-cols-3 gap-4 mx-8">
                     {/* Body - mobile */}
-                    <div className="col-span-2 relative flex xl:hidden h-max xl:h-108 w-full rounded-2xl bg-secondary-light px-4 py-6 sm:p-6 md:p-8 overflow-hidden">
+                    <Reveal className="col-span-2 relative flex xl:hidden h-max xl:h-108 w-full rounded-2xl bg-secondary-light px-4 py-6 sm:p-6 md:p-8 overflow-hidden">
                         <div className="flex flex-col gap-6 md:gap-8">
                             <h2 className="text-primary-mid xl:max-w-lg 2xl:max-w-xl shrink-0 z-45">Specialist painting services - producing the perfect finish.</h2>
                             <p className="text-primary-mid max-w-3xl xl:max-w-md 2xl:max-w-lg z-45">Beautiful, premium results with tidiness in mind. The quality decoration that your house deserves.</p>
@@ -69,9 +78,9 @@ export default function Home() {
                             <Image alt="Value proposition image" src="/assets/home/hero1.jpg" width={400} height={400} className="absolute right-0 object-cover h-124 w-124 rounded-full z-43 brightness-90" />
                             <div className="h-136 w-136 bg-secondary-mid/30 rounded-full z-42 inset-0 -translate-y-6" />
                         </div>
-                    </div>
+                    </Reveal>
                     {/* Stats square */}
-                    <div className="col-span-2 sm:col-span-1 relative overflow-hidden bg-primary-dark w-full h-72 sm:h-84 xl:h-108 rounded-2xl p-6 xl:p-8 flex flex-col-reverse gap-4 lg:flex-row lg:items-end lg:justify-between xl:gap-8">
+                    <Reveal from="left" className="col-span-2 sm:col-span-1 relative overflow-hidden bg-primary-dark w-full h-72 sm:h-84 xl:h-108 rounded-2xl p-6 xl:p-8 flex flex-col-reverse gap-4 lg:flex-row lg:items-end lg:justify-between xl:gap-8">
                         <div className="flex flex-col mb-4 z-50">
                             <span className="text-6xl sm:text-7xl lg:text-8xl font-extralight text-secondary-mid">25+</span>
                             <p className="text-base lg:text-xl text-secondary-light">Years of experience</p>
@@ -84,16 +93,16 @@ export default function Home() {
                             <Image alt="Value proposition image" src="/assets/home/hero1.jpg" width={400} height={400} className="absolute right-0 object-cover h-84 md:h-124 w-84 md:w-124 rounded-full z-43 brightness-90" />
                             <div className="h-92 md:h-136 w-92 md:w-136 bg-secondary-mid/30 rounded-full z-42 inset-0 -translate-y-4 md:-translate-y-6" />
                         </div>
-                    </div>
+                    </Reveal>
                     {/* Image - mobile */}
-                    <div className="col-span-1 hidden sm:flex xl:hidden relative h-72 sm:h-84 xl:h-108 w-full rounded-2xl bg-secondary-light p-8 overflow-hidden">
+                    <Reveal from="right" className="col-span-1 hidden sm:flex xl:hidden relative h-72 sm:h-84 xl:h-108 w-full rounded-2xl bg-secondary-light p-8 overflow-hidden">
                         <div className="absolute md:-right-48 lg:-right-32 -top-8 md:-top-18">
                             <Image alt="Value proposition image" src="/assets/home/hero1.jpg" width={400} height={400} className="absolute right-0 object-cover h-84 md:h-124 w-84 md:w-124 rounded-full z-43 brightness-90" />
                             <div className="h-96 md:h-136 w-96 md:w-136 bg-secondary-mid/30 rounded-full z-42 inset-0 -translate-y-4 md:-translate-y-6" />
                         </div>
-                    </div>
+                    </Reveal>
                     {/* Body - desktop */}
-                    <div className="col-span-2 relative hidden xl:flex h-84 xl:h-108 w-full rounded-2xl bg-secondary-light p-8 overflow-hidden">
+                    <Reveal from="right" className="col-span-2 relative hidden xl:flex h-84 xl:h-108 w-full rounded-2xl bg-secondary-light p-8 overflow-hidden">
                         <div className="flex flex-col gap-8">
                             <h2 className="text-primary-mid xl:max-w-lg 2xl:max-w-xl shrink-0 z-45">Specialist painting services - producing the perfect finish.</h2>
                             <p className="text-primary-mid max-w-3xl xl:max-w-md 2xl:max-w-lg z-45">Beautiful, premium results with tidiness in mind. The quality decoration that your house deserves.</p>
@@ -103,43 +112,45 @@ export default function Home() {
                             <Image alt="Value proposition image" src="/assets/home/hero1.jpg" width={400} height={400} className="absolute right-0 object-cover h-124 w-124 rounded-full z-43 brightness-90" />
                             <div className="h-136 w-136 bg-secondary-mid/30 rounded-full z-42 inset-0 -translate-y-6" />
                         </div>
-                    </div>
+                    </Reveal>
                 </div>
             </section>
 
             {/* SERVICES SNAPSHOT */}
             <section id="services" className="overflow-hidden py-16 min-h-180 sm:min-h-220 flex flex-col xl:flex-row items-center justify-center relative px-4 xl:px-0">
-                <div className="z-40 max-w-3xl mx-8 container w-full text-center xl:text-left xl:max-w-7xl flex flex-col gap-12 items-center justify-center">
-                    <h2 className="text-primary-mid max-w-6xl mr-auto">Reliable services that always result in perfect paintwork.</h2>
+                <div className="z-40 max-w-3xl mx-8 container w-full text-center xl:text-left xl:max-w-7xl flex flex-col gap-12 items-center xl:items-start justify-center">
+                    <Reveal from="left">
+                        <h2 className="text-primary-mid max-w-6xl mr-auto">Reliable services that always result in perfect paintwork.</h2>
+                    </Reveal>
                     <div className="max-w-xl md:max-w-2xl xl:max-w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 xl:gap-4 w-full text-dark">
-                        <div className="flex flex-col items-center xl:items-start gap-4">
+                        <Reveal from="up" delay={0.1} className="flex flex-col items-center xl:items-start gap-4">
                             <div className="w-full max-w-64 lg:max-w-76 h-56 lg:h-68 bg-black/50 rounded-2xl" />
                             <div className="xl:ml-2 flex flex-col gap-2">
                                 <h3 className="xl:text-3xl">Interior painting</h3>
                                 <p className="text-base md:text-lg xl:text-xl max-w-66">Transforming your space with a fresh coat of paint, leaving it looking brand new.</p>
                             </div>
-                        </div>
-                        <div className="flex flex-col items-center xl:items-start gap-4">
+                        </Reveal>
+                        <Reveal from="up" delay={0.2} className="flex flex-col items-center xl:items-start gap-4">
                             <div className="w-full max-w-64 lg:max-w-76 h-56 lg:h-68 bg-black/50 rounded-2xl" />
                             <div className="xl:ml-2 flex flex-col gap-2">
                                 <h3 className="xl:text-3xl">Exterior painting</h3>
                                 <p className="text-base md:text-lg xl:text-xl max-w-66">Restorative and protective treatments for your property.</p>
                             </div>
-                        </div>
-                        <div className="flex flex-col items-center xl:items-start gap-4">
-                            <div className="w-full max-w-64 lg:max-w-76 h-56 lg:h-68 bg-black/50 rounded-2xl" />
-                            <div className="xl:ml-2 flex flex-col gap-2">
-                                <h3 className="xl:text-3xl">Dustless sanding</h3>
-                                <p className="text-base md:text-lg xl:text-xl max-w-66">Creating minimal mess and dust, whilst providing a perfect surface for painting.</p>
-                            </div>
-                        </div>
-                        <div className="flex flex-col items-center xl:items-start gap-4">
+                        </Reveal>
+                        <Reveal from="up" delay={0.4} className="flex flex-col items-center xl:items-start gap-4">
                             <div className="w-full max-w-64 lg:max-w-76 h-56 lg:h-68 bg-black/50 rounded-2xl" />
                             <div className="xl:ml-2 flex flex-col gap-2">
                                 <h3 className="xl:text-3xl">Wallpapering</h3>
                                 <p className="text-base md:text-lg xl:text-xl max-w-66">Fabric, Vinyl and Paper wallpaper application and removal.</p>
                             </div>
-                        </div>
+                        </Reveal>
+                        <Reveal from="up" delay={0.3} className="flex flex-col items-center xl:items-start gap-4">
+                            <div className="w-full max-w-64 lg:max-w-76 h-56 lg:h-68 bg-black/50 rounded-2xl" />
+                            <div className="xl:ml-2 flex flex-col gap-2">
+                                <h3 className="xl:text-3xl">Dustless sanding</h3>
+                                <p className="text-base md:text-lg xl:text-xl max-w-66">Creating minimal mess and dust, whilst providing a perfect surface for painting.</p>
+                            </div>
+                        </Reveal>
                     </div>
                     <div className="flex items-center justify-center xl:justify-start w-full gap-8">
                         <hr className="w-full max-w-24 border-none bg-secondary-mid/30 h-0.5" />
@@ -154,52 +165,56 @@ export default function Home() {
             {/* WHY MB DECOR */}
             <section id="whymbdecor" className="overflow-hidden py-16 min-h-180 sm:min-h-220 flex flex-col xl:flex-row items-center justify-center relative px-4 xl:px-0">
                 <div className="z-40 max-w-2xl container w-full flex flex-col items-center justify-center gap-12 xl:max-w-6xl mx-8">
-                    <div className="flex flex-col xl:grid xl:grid-cols-2 items-end gap-8 lg:gap-12">
+                    <Reveal className="flex flex-col xl:grid xl:grid-cols-2 items-end gap-8 lg:gap-12">
                         <h2 className="text-primary-mid">Prestigious painting services in London and the South East.</h2>
                         <p className="text-primary-mid">
                             Clients trust us to deliver flawless results, noting the tidiness and quality of our work. We're proud to have built a reputation for high-quality, reliability and cleanliness.
                         </p>
-                    </div>
+                    </Reveal>
                     <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 xl:gap-12 text-primary-dark">
-                        <Video id="why-mb" src={"/assets/home/why-mb.mov"} className={"w-full object-cover rounded-2xl brightness-90 h-96 lg:h-142"} />
-                        <ul className="flex flex-col xl:items-start justify-center gap-6 lg:gap-8 bg-secondary-light border-l-4 border-secondary-mid px-4 md:px-8 rounded-2xl py-8">
-                            <li className="flex items-center gap-6">
-                                <div className="min-w-12 min-h-12 bg-secondary-mid/30 rounded-full text-secondary-mid flex items-center justify-center">
-                                    <PaintBucket className="text-base" />
-                                </div>
-                                <p className="text-lg lg:text-xl">We only use the highest quality paints and materials.</p>
-                            </li>
-                            <li className="flex items-center gap-6">
-                                <div className="min-w-12 min-h-12 bg-secondary-mid/30 rounded-full text-secondary-mid flex items-center justify-center">
-                                    <FlaskConicalOff className="text-base" />
-                                </div>
-                                <p className="text-lg lg:text-xl">Reduced airborne dust and debris. Better for your health and the environment.</p>
-                            </li>
-                            <li className="flex items-center gap-6">
-                                <div className="min-w-12 min-h-12 bg-secondary-mid/30 rounded-full text-secondary-mid flex items-center justify-center">
-                                    <Paintbrush className="text-base" />
-                                </div>
-                                <p className="text-lg lg:text-xl">Our methods ensure that the paint lasts much longer and looks better.</p>
-                            </li>
-                            <li className="flex items-center gap-6">
-                                <div className="min-w-12 min-h-12 bg-secondary-mid/30 rounded-full text-secondary-mid flex items-center justify-center">
-                                    <Focus className="text-base" />
-                                </div>
-                                <p className="text-lg lg:text-xl">Flawless accuracy and maximum attention to detail every time.</p>
-                            </li>
-                            <li className="flex items-center gap-6">
-                                <div className="min-w-12 min-h-12 bg-secondary-mid/30 rounded-full text-secondary-mid flex items-center justify-center">
-                                    <Sparkles className="text-base" />
-                                </div>
-                                <p className="text-lg lg:text-xl">Clean and tidy - we leave the space better than we found it.</p>
-                            </li>
-                            <li className="flex items-center gap-6">
-                                <div className="min-w-12 min-h-12 bg-secondary-mid/30 rounded-full text-secondary-mid flex items-center justify-center">
-                                    <Clock className="text-base" />
-                                </div>
-                                <p className="text-lg lg:text-xl">Over 20 years of experience - you are in safe hands.</p>
-                            </li>
-                        </ul>
+                        <Reveal from="left">
+                            <Video id="why-mb" src={"/assets/home/why-mb.mov"} className={"w-full object-cover rounded-2xl brightness-90 h-96 lg:h-142"} />
+                        </Reveal>
+                        <Reveal from="right">
+                            <ul className="flex flex-col xl:items-start justify-center gap-6 lg:gap-8 bg-secondary-light border-l-4 border-secondary-mid px-4 md:px-8 rounded-2xl py-8">
+                                <li className="flex items-center gap-6">
+                                    <div className="min-w-12 min-h-12 bg-secondary-mid/30 rounded-full text-secondary-mid flex items-center justify-center">
+                                        <PaintBucket className="text-base" />
+                                    </div>
+                                    <p className="text-lg lg:text-xl">We only use the highest quality paints and materials.</p>
+                                </li>
+                                <li className="flex items-center gap-6">
+                                    <div className="min-w-12 min-h-12 bg-secondary-mid/30 rounded-full text-secondary-mid flex items-center justify-center">
+                                        <FlaskConicalOff className="text-base" />
+                                    </div>
+                                    <p className="text-lg lg:text-xl">Reduced airborne dust and debris. Better for your health and the environment.</p>
+                                </li>
+                                <li className="flex items-center gap-6">
+                                    <div className="min-w-12 min-h-12 bg-secondary-mid/30 rounded-full text-secondary-mid flex items-center justify-center">
+                                        <Paintbrush className="text-base" />
+                                    </div>
+                                    <p className="text-lg lg:text-xl">Our methods ensure that the paint lasts much longer and looks better.</p>
+                                </li>
+                                <li className="flex items-center gap-6">
+                                    <div className="min-w-12 min-h-12 bg-secondary-mid/30 rounded-full text-secondary-mid flex items-center justify-center">
+                                        <Focus className="text-base" />
+                                    </div>
+                                    <p className="text-lg lg:text-xl">Flawless accuracy and maximum attention to detail every time.</p>
+                                </li>
+                                <li className="flex items-center gap-6">
+                                    <div className="min-w-12 min-h-12 bg-secondary-mid/30 rounded-full text-secondary-mid flex items-center justify-center">
+                                        <Sparkles className="text-base" />
+                                    </div>
+                                    <p className="text-lg lg:text-xl">Clean and tidy - we leave the space better than we found it.</p>
+                                </li>
+                                <li className="flex items-center gap-6">
+                                    <div className="min-w-12 min-h-12 bg-secondary-mid/30 rounded-full text-secondary-mid flex items-center justify-center">
+                                        <Clock className="text-base" />
+                                    </div>
+                                    <p className="text-lg lg:text-xl">Over 20 years of experience - you are in safe hands.</p>
+                                </li>
+                            </ul>
+                        </Reveal>
                     </div>
                 </div>
             </section>
@@ -229,21 +244,27 @@ export default function Home() {
             {/* TESTIMONIAL SNIPPET */}
             <section id="about" className="overflow-hidden py-16 min-h-180 flex flex-col xl:flex-row items-center justify-center relative bg-secondary-light/40 px-4 xl:px-0">
                 <div className="z-40 container w-full flex flex-col items-center justify-center max-w-5xl xl:max-w-6xl">
-                    <h2 className="text-primary-mid text-center">Hear from some of our clients.</h2>
+                    <Reveal>
+                        <h2 className="text-primary-mid text-center">Hear from some of our clients.</h2>
+                    </Reveal>
                     <hr className="border-none bg-neutral-300/50 w-full max-w-xs h-0.5 my-8" />
                     <div className="flex flex-col md:flex-row items-center gap-2 md:gap-6 bg-secondary-light rounded-2xl mb-8 border-b-4 md:border-b-0 md:border-r-4 border-primary-dark">
                         <div className="hidden md:flex flex-col items-end justify-end relative gap-2 bg-primary-dark rounded-2xl p-4 min-w-64 2xl:min-w-72 h-48 xl:h-64 mx-2 lg:mx-0">
                             <QuoteIcon fill="currentColor" className="w-16 h-16 xl:w-24 xl:h-24 absolute top-4 right-4 text-secondary-mid opacity-20" />
+                            <Reveal from="left" className="flex flex-col items-end">
+                                <p className="text-secondary-mid text-2xl 2xl:text-3xl text-center font-medium">John Doe</p>
+                                <p className="text-secondary-mid text-lg 2xl:text-xl text-center font-medium">London</p>
+                            </Reveal>
+                        </div>
+                        <Reveal from="left" delay={0.2}>
+                            <p className="text-primary-mid max-w-4xl rounded-2xl m-8 xl:text-2xl">
+                                &quot;Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem dolores quas ipsa dolorum earum accusantium asperiores consectetur architecto omnis veritatis excepturi at cumque vel consequuntur, sunt quos, labore itaque consequatur.&quot;
+                            </p>
+                        </Reveal>
+                        <Reveal from="left" className="flex flex-col md:hidden items-center justify-center mb-6">
                             <p className="text-secondary-mid text-2xl 2xl:text-3xl text-center font-medium">John Doe</p>
                             <p className="text-secondary-mid text-lg 2xl:text-xl text-center font-medium">London</p>
-                        </div>
-                        <p className="text-primary-mid max-w-4xl rounded-2xl m-8 xl:text-2xl">
-                            &quot;Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem dolores quas ipsa dolorum earum accusantium asperiores consectetur architecto omnis veritatis excepturi at cumque vel consequuntur, sunt quos, labore itaque consequatur.&quot;
-                        </p>
-                        <div className="flex flex-col md:hidden items-center justify-center mb-6">
-                            <p className="text-secondary-mid text-2xl 2xl:text-3xl text-center font-medium">John Doe</p>
-                            <p className="text-secondary-mid text-lg 2xl:text-xl text-center font-medium">London</p>
-                        </div>
+                        </Reveal>
                     </div>
                     <div className="hidden md:flex items-center justify-center w-full mx-auto gap-8">
                         <hr className="hidden xl:block w-24 border-none bg-secondary-mid/30 h-0.5" />

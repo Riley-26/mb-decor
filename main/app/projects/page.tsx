@@ -83,17 +83,17 @@ export default function ProjectsPage() {
                     <ul className="flex flex-col gap-32">
                         {
                             mainProjects.map((project) => (
-                                <li key={project.title} className="flex flex-col-reverse lg:flex-row justify-center items-center w-full max-w-xl lg:max-w-full gap-6 lg:gap-16 bg-secondary-light border-l-6 border-secondary-dark rounded-2xl px-6 lg:px-8 py-6 lg:py-4 xl:py-8 shadow-xl">
+                                <li key={project.title} className="flex flex-col-reverse lg:flex-row justify-center items-center w-full max-w-xl lg:max-w-full gap-6 lg:gap-16 bg-secondary-light border-l-6 border-secondary-dark rounded-2xl px-4 lg:px-8 py-6 lg:py-4 xl:py-8 shadow-xl">
                                     <div className="lg:w-1/2 flex flex-col gap-4 xl:gap-8">
                                         <span className="text-secondary-mid text-lg lg:text-xl xl:text-2xl font-medium">0{project.id}</span>
-                                        <h2 className="text-2xl lg:text-3xl xl:text-5xl">{project.title}</h2>
-                                        <p>{project.description}</p>
+                                        <h2 className="text-2xl md:text-3xl xl:text-4xl">{project.title}</h2>
+                                        <p className="text-lg md:text-xl">{project.description}</p>
                                         <ul className="flex flex-col gap-4 mt-2">
                                             {
                                                 project.features.map((feature, index) => (
                                                     <React.Fragment key={index}>
                                                         <li className="flex items-center gap-2">
-                                                            <span className="flex items-center gap-2 text-base lg:text-lg xl:text-xl">
+                                                            <span className="flex items-center gap-2 text-base lg:text-lg xl:text-lg">
                                                                 {feature.icon}
                                                                 {feature.label}
                                                             </span>
