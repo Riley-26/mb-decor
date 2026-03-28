@@ -123,7 +123,7 @@ export default function ContactPage() {
                                             Phone
                                         </h3>
                                         <p className="lg:text-xl font-medium">
-                                            07900 000 000
+                                            07595 375215
                                         </p>
                                     </div>
                                 </div>

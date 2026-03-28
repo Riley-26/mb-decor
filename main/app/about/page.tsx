@@ -139,10 +139,10 @@ export default function AboutPage() {
             {/* PROPERTY TYPES */}
             <section id="properties" className="py-32 min-h-180 sm:min-h-220 flex flex-col xl:flex-row items-center justify-center relative px-4 2xl:px-0">
                 <div className="z-40 container w-full flex flex-col items-center justify-center gap-16 max-w-7xl relative text-center">
-                    <div className="flex flex-col items-center gap-6 z-30">
+                    <Reveal className="flex flex-col items-center gap-6 z-30">
                         <h2 className="text-primary-mid">Property types that we focus on.</h2>
                         <p>We have worked on both domestic and commercial projects across London and the South East, from single rooms to large-scale office and retail spaces.</p>
-                    </div>
+                    </Reveal>
                     <div className="flex flex-col lg:flex-row justify-center items-center w-full gap-16 lg:h-114">
                         <div className="w-full md:w-1/2 max-w-sm md:max-w-xl">
                             <Image src="/assets/about/about-hero.jpg" alt="Domestic Work 1" width={600} height={600} className="object-cover rounded-2xl z-30" />
