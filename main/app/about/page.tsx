@@ -145,7 +145,7 @@ export default function AboutPage() {
                     </Reveal>
                     <div className="flex flex-col lg:flex-row justify-center items-center w-full gap-16 lg:h-114">
                         <div className="w-full md:w-1/2 max-w-sm md:max-w-xl">
-                            <Image src="/assets/about/about-hero.jpg" alt="Domestic Work 1" width={600} height={600} className="object-cover rounded-2xl z-30" />
+                            <Image src="/assets/about/property.jpg" alt="Domestic Work 1" width={600} height={600} className="object-cover rounded-2xl z-30 brightness-80 shadow-xl" />
                         </div>
                         <div className="md:my-6 flex flex-col gap-10 w-full md:w-1/2 max-w-sm md:max-w-md">
                             <AccordionItem name="Domestic Work">

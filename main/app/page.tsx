@@ -75,7 +75,7 @@ export default function Home() {
                             <Link href="/about" className="text-primary-mid text-base sm:text-lg underline hover:text-primary-light transition-colors duration-75 w-max">Learn more</Link>
                         </div>
                         <div className="hidden xl:block absolute -right-48 2xl:-right-32 -top-8">
-                            <Image alt="Value proposition image" src="/assets/home/hero1.jpg" width={400} height={400} className="absolute right-0 object-cover h-124 w-124 rounded-full z-43 brightness-90" />
+                            <Image alt="Value proposition image" src="/assets/home/stats-box.jpg" width={400} height={400} className="absolute right-0 object-cover h-124 w-124 rounded-full z-43 brightness-90" />
                             <div className="h-136 w-136 bg-secondary-mid/30 rounded-full z-42 inset-0 -translate-y-6" />
                         </div>
                     </Reveal>
@@ -90,14 +90,14 @@ export default function Home() {
                             <p className="text-base lg:text-xl text-secondary-light">Customer <br className="sm:hidden" /> Satisfaction</p>
                         </div>
                         <div className="block sm:hidden absolute -right-36 sm:-right-32 -top-4 md:-top-18">
-                            <Image alt="Value proposition image" src="/assets/home/hero1.jpg" width={400} height={400} className="absolute right-0 object-cover h-84 md:h-124 w-84 md:w-124 rounded-full z-43 brightness-90" />
+                            <Image alt="Value proposition image" src="/assets/home/stats-box.jpg" width={400} height={400} className="absolute right-0 object-cover h-84 md:h-124 w-84 md:w-124 rounded-full z-43 brightness-90" />
                             <div className="h-92 md:h-136 w-92 md:w-136 bg-secondary-mid/30 rounded-full z-42 inset-0 -translate-y-4 md:-translate-y-6" />
                         </div>
                     </Reveal>
                     {/* Image - mobile */}
                     <Reveal from="right" className="col-span-1 hidden sm:flex xl:hidden relative h-72 sm:h-84 xl:h-108 w-full rounded-2xl bg-secondary-light p-8 overflow-hidden">
                         <div className="absolute md:-right-48 lg:-right-32 -top-8 md:-top-18">
-                            <Image alt="Value proposition image" src="/assets/home/hero1.jpg" width={400} height={400} className="absolute right-0 object-cover h-84 md:h-124 w-84 md:w-124 rounded-full z-43 brightness-90" />
+                            <Image alt="Value proposition image" src="/assets/home/stats-box.jpg" width={400} height={400} className="absolute right-0 object-cover h-84 md:h-124 w-84 md:w-124 rounded-full z-43 brightness-90" />
                             <div className="h-96 md:h-136 w-96 md:w-136 bg-secondary-mid/30 rounded-full z-42 inset-0 -translate-y-4 md:-translate-y-6" />
                         </div>
                     </Reveal>
@@ -109,7 +109,7 @@ export default function Home() {
                             <Link href="/about" className="text-primary-mid text-lg underline hover:text-primary-light transition-colors duration-75 w-max">Learn more</Link>
                         </div>
                         <div className="hidden xl:block absolute -right-48 2xl:-right-32 -top-8">
-                            <Image alt="Value proposition image" src="/assets/home/hero1.jpg" width={400} height={400} className="absolute right-0 object-cover h-124 w-124 rounded-full z-43 brightness-90" />
+                            <Image alt="Value proposition image" src="/assets/home/stats-box.jpg" width={400} height={400} className="absolute right-0 object-cover h-124 w-124 rounded-full z-43 brightness-90" />
                             <div className="h-136 w-136 bg-secondary-mid/30 rounded-full z-42 inset-0 -translate-y-6" />
                         </div>
                     </Reveal>
@@ -125,7 +125,7 @@ export default function Home() {
                     <div className="max-w-xl md:max-w-2xl xl:max-w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 xl:gap-4 w-full text-dark">
                         <Reveal delay={0.1} className="flex flex-col items-center xl:items-start gap-4">
                             <div className="w-full max-w-64 lg:max-w-76 h-56 lg:h-68 bg-black/50 rounded-2xl overflow-hidden shadow-lg">
-                                <Image width={350} height={350} src="/assets/home/interior.jpg" alt="Interior paintwork" className="object-cover brightness-90" />
+                                <Image width={350} height={350} src="/assets/home/interior.jpg" alt="Interior paintwork image" className="object-cover brightness-90" />
                             </div>
                             <div className="xl:ml-2 flex flex-col gap-2">
                                 <h3 className="xl:text-3xl">Interior painting</h3>
@@ -134,7 +134,7 @@ export default function Home() {
                         </Reveal>
                         <Reveal delay={0.2} className="flex flex-col items-center xl:items-start gap-4">
                             <div className="w-full max-w-64 lg:max-w-76 h-56 lg:h-68 bg-black/50 rounded-2xl overflow-hidden shadow-lg">
-                                <Image width={350} height={350} src="/assets/home/exterior.jpg" alt="Exterior paintwork" className="object-cover brightness-90" />
+                                <Image width={350} height={350} src="/assets/home/exterior.jpg" alt="Exterior paintwork image" className="object-cover brightness-90" />
                             </div>
                             <div className="xl:ml-2 flex flex-col gap-2">
                                 <h3 className="xl:text-3xl">Exterior painting</h3>
@@ -143,7 +143,7 @@ export default function Home() {
                         </Reveal>
                         <Reveal delay={0.3} className="flex flex-col items-center xl:items-start gap-4">
                             <div className="w-full max-w-64 lg:max-w-76 h-56 lg:h-68 bg-black/50 rounded-2xl overflow-hidden shadow-lg">
-                                <Image width={350} height={350} src="/assets/home/exterior.jpg" alt="Exterior paintwork" className="object-cover brightness-90" />
+                                <Image width={350} height={350} src="/assets/home/wallpapering.jpg" alt="Wallpapering image" className="object-cover brightness-90" />
                             </div>
                             <div className="xl:ml-2 flex flex-col gap-2">
                                 <h3 className="xl:text-3xl">Wallpapering</h3>
@@ -152,7 +152,7 @@ export default function Home() {
                         </Reveal>
                         <Reveal delay={0.4} className="flex flex-col items-center xl:items-start gap-4">
                             <div className="w-full max-w-64 lg:max-w-76 h-56 lg:h-68 bg-black/50 rounded-2xl overflow-hidden shadow-lg">
-                                <Image width={350} height={350} src="/assets/home/exterior.jpg" alt="Exterior paintwork" className="object-cover brightness-90" />
+                                <Image width={350} height={350} src="/assets/home/sanding.jpg" alt="Dustless sanding image" className="object-cover brightness-90" />
                             </div>
                             <div className="xl:ml-2 flex flex-col gap-2">
                                 <h3 className="xl:text-3xl">Dustless sanding</h3>
@@ -320,8 +320,8 @@ export default function Home() {
                             </Button>
                         </form>
                     </div>
-                    <div className="hidden xl:block brightness-80 bg-secondary-dark rounded-2xl overflow-hidden max-h-172">
-                        <Image src="/assets/home/hero1.jpg" alt="CTA" width={500} height={500} className="h-full object-cover z-20" />
+                    <div className="hidden xl:block sepia-20 brightness-80 bg-secondary-dark rounded-2xl overflow-hidden max-h-172">
+                        <Image src="/assets/home/contact.jpg" alt="CTA" width={500} height={500} className="h-full object-cover z-20" />
                     </div>
                 </div>
             </section>
