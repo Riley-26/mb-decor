@@ -31,7 +31,7 @@ export default function Footer() {
                     <div className="flex flex-col gap-2 items-center">
                         <div className="flex items-center justify-center gap-3">
                             <Link
-                                href=""
+                                href="https://www.facebook.com/mbdecorUK"
                                 aria-label="Link to Facebook"
                                 target="_blank"
                                 className="cursor-pointer"

@@ -84,7 +84,7 @@ export default function AboutPage() {
                                 <p className="lg:text-xl text-light z-40">Flawless finishes using the best materials and techniques.</p>
                                 <p className="lg:text-xl text-light z-40">We are proud of every project we have completed. And as long as our clients are happy, we are happy.</p>
                             </div>
-                            <Image src="/assets/about/about-hero.jpg" alt="Story 1" width={900} height={900} className="absolute top-0 left-0 object-cover rounded-2xl w-full h-full brightness-40 sepia-20 z-30" />
+                            <Image src="/assets/about/results.jpg" alt="Black-painted drawers image" width={900} height={900} className="absolute top-0 left-0 object-cover rounded-2xl w-full h-full brightness-40 sepia-20 z-30" />
                         </div>
                     </div>
                 </div>
@@ -140,8 +140,8 @@ export default function AboutPage() {
             <section id="properties" className="py-32 min-h-180 sm:min-h-220 flex flex-col xl:flex-row items-center justify-center relative px-4 2xl:px-0">
                 <div className="z-40 container w-full flex flex-col items-center justify-center gap-16 max-w-7xl relative text-center">
                     <Reveal className="flex flex-col items-center gap-6 z-30">
-                        <h2 className="text-primary-mid">Property types that we focus on.</h2>
-                        <p>We have worked on both domestic and commercial projects across London and the South East, from single rooms to large-scale office and retail spaces.</p>
+                        <h2 className="text-primary-mid">Experienced with a wide range of property types.</h2>
+                        <p>We have worked on both domestic and commercial projects across London and the South East, from single rooms to large-scale office spaces.</p>
                     </Reveal>
                     <div className="flex flex-col lg:flex-row justify-center items-center w-full gap-16 lg:h-114">
                         <div className="w-full md:w-1/2 max-w-sm md:max-w-xl">
@@ -149,13 +149,13 @@ export default function AboutPage() {
                         </div>
                         <div className="md:my-6 flex flex-col gap-10 w-full md:w-1/2 max-w-sm md:max-w-md">
                             <AccordionItem name="Domestic Work">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia modi nesciunt cupiditate adipisci eum saepe vel cumque odit dicta obcaecati?
+                                Working on anything from single rooms to large residencies, we have fine-tuned our approach to delivering perfect results in domestic properties.
                             </AccordionItem>
                             <AccordionItem name="Commercial Work">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia modi nesciunt cupiditate adipisci eum saepe vel cumque odit dicta obcaecati?
+                                Solid expertise in delivering high-quality finishes in commercial spaces, ensuring durability and safety where it matters most.
                             </AccordionItem>
                             <AccordionItem name="Heritage Work">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia modi nesciunt cupiditate adipisci eum saepe vel cumque odit dicta obcaecati?
+                                Requiring strict adherence to preservation guidelines. We have a wealth of experience in painting heritage properties and can ensure that your property is protected and maintained.
                             </AccordionItem>
                             <Button size="md" color="primaryDark" to="/contact" roundSize="sm" className="w-max hidden md:block mx-auto lg:mx-0">
                                 See Projects
@@ -205,7 +205,7 @@ export default function AboutPage() {
                     <ul className="flex flex-col w-full gap-6">
                         <li className="bg-secondary-light border-l-4 border-secondary-mid rounded-2xl px-6 py-5 flex flex-col gap-6">
                             <h3 className="text-primary-mid">How long does a typical painting job take?</h3>
-                            <p className="text-base md:text-xl text-primary-mid/80">This depends on the size and scope of the project. A single room usually takes one to two days, while larger homes or commercial properties may take a week or more. We'll give you a clear timeline when we provide your free quote.</p>
+                            <p className="text-base md:text-xl text-primary-mid/80">This depends on the size and scope of the project. A single room usually takes one to a few days, while larger homes or commercial properties may take a couple of weeks or more. We'll give you a clear timeline when we provide your free quote.</p>
                         </li>
                         <li className="bg-secondary-light border-l-4 border-secondary-mid rounded-2xl px-6 py-5 flex flex-col gap-6">
                             <h3 className="text-primary-mid">Do you offer free quotes?</h3>
@@ -217,7 +217,7 @@ export default function AboutPage() {
                         </li>
                         <li className="bg-secondary-light border-l-4 border-secondary-mid rounded-2xl px-6 py-5 flex flex-col gap-6">
                             <h3 className="text-primary-mid">Do you work on commercial properties as well as residential?</h3>
-                            <p className="text-base md:text-xl text-primary-mid/80">Absolutely. We have extensive experience working on both domestic and commercial projects across London and the South East, from single rooms to large-scale office and retail spaces.</p>
+                            <p className="text-base md:text-xl text-primary-mid/80">Absolutely. We have extensive experience working on both domestic and commercial projects across London and the South East, from single rooms to large-scale office spaces.</p>
                         </li>
                         <li className="bg-secondary-light border-l-4 border-secondary-mid rounded-2xl px-6 py-5 flex flex-col gap-6">
                             <h3 className="text-primary-mid">How do I prepare before you arrive?</h3>
