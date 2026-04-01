@@ -33,13 +33,13 @@ export default function RootLayout({
     return (
         <html lang="en" suppressHydrationWarning>
             <body className={`${dmSans.className} ${oregano.variable} ${ptSerif.variable} antialiased`}>
-                <Script src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}`} />
+                <Script src={"https://www.googletagmanager.com/gtag/js?id=G-C3BLZHNX3K"} />
                 <Script id="google-analytics" strategy="afterInteractive">
                     {`
                         window.dataLayer = window.dataLayer || [];
                         function gtag(){dataLayer.push(arguments);}
                         gtag('js', new Date());
-                        gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}');
+                        gtag('config', 'G-C3BLZHNX3K');
                     `}
                 </Script>
                 {children}
