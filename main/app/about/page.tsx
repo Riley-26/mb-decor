@@ -92,11 +92,11 @@ export default function AboutPage() {
 
             {/* APPROACH */}
             <section id="approach" className="py-32 min-h-180 sm:min-h-220 flex flex-col xl:flex-row items-center justify-center relative px-4 2xl:px-0">
-                <div className="z-40 container w-full flex flex-col justify-center gap-12 max-w-8xl relative">
+                <div className="z-40 container w-full flex flex-col justify-center items-center gap-12 max-w-8xl relative">
                     <Reveal from="left" className="flex flex-col items-center gap-6 z-30">
-                        <h2 className="text-primary-mid mr-auto max-w-5xl text-center xl:text-left">A modern approach that always results in a flawless finish.</h2>
+                        <h2 className="text-primary-mid mr-auto max-w-5xl text-center">A modern approach that always results in a flawless finish.</h2>
                     </Reveal>
-                    <div className="max-w-xl md:max-w-2xl xl:max-w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 xl:gap-4 w-full text-dark mx-auto">
+                    <div className="max-w-xl md:max-w-2xl xl:max-w-5xl grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-4 w-full text-dark mx-auto">
                         <Reveal delay={0.1} className="flex flex-col items-center xl:items-start gap-4 w-full pb-12 p-4 lg:p-6 bg-primary-dark rounded-2xl text-secondary-light">
                             <div className="flex items-center justify-center bg-primary-mid/50 rounded-full p-2 border border-secondary-mid/40">
                                 <BrushCleaning strokeWidth={1.5} className="w-8 h-8" />
@@ -118,20 +118,13 @@ export default function AboutPage() {
                             <h3 className="text-secondary-light">03 - Finishing</h3>
                             <p className="text-base lg:text-lg text-center xl:text-start">After the paint is applied, we ensure that it is finished to a high standard and that you are happy with the result.</p>
                         </Reveal>
-                        <Reveal delay={0.4} className="flex flex-col items-center xl:items-start gap-4 w-full pb-12 p-4 lg:p-6 bg-primary-dark rounded-2xl text-secondary-light">
-                            <div className="flex items-center justify-center bg-primary-mid/50 rounded-full p-2 border border-secondary-mid/40">
-                                <SearchCheck strokeWidth={1.5} className="w-8 h-8" />
-                            </div>
-                            <h3 className="text-secondary-light">04 - Inspection</h3>
-                            <p className="text-base lg:text-lg text-center xl:text-start">Through touch-ups and your feedback, we achieve the perfect finish.</p>
-                        </Reveal>
                     </div>
-                    <div className="flex items-center justify-center xl:justify-start w-full gap-8">
+                    <div className="flex items-center justify-center w-full gap-8">
                         <hr className="w-full max-w-24 border-none bg-secondary-mid/30 h-0.5" />
                         <Button size="md" color="secondaryMid" to="/contact" roundSize="sm" className="w-max inline-flex items-center justify-center gap-2">
                             Inquiries <ArrowRight className="w-4 h-4" />
                         </Button>
-                        <hr className="block xl:hidden w-full max-w-24 border-none bg-secondary-mid/30 h-0.5" />
+                        <hr className="w-full max-w-24 border-none bg-secondary-mid/30 h-0.5" />
                     </div>
                 </div>
             </section>

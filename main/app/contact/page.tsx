@@ -2,7 +2,7 @@ import Navbar from "@/components/layout/Navbar"
 import Footer from "@/components/layout/Footer"
 import { Metadata } from "next"
 import Button from "@/components/ui/Button"
-import { Facebook } from "lucide-react"
+import { Facebook, Link, Mail } from "lucide-react"
 
 export const metadata: Metadata = {
     title: "Contact Us | MB Prestige Painting",
@@ -115,7 +115,7 @@ export default function ContactPage() {
                                             Email
                                         </h3>
                                         <p className="lg:text-xl font-medium">
-                                            contact@mbprestige.co.uk
+                                            mark.mbdecor@gmail.com
                                         </p>
                                     </div>
                                     <div className="flex flex-col gap-2">
@@ -139,10 +139,12 @@ export default function ContactPage() {
                                     />
                                 </a>
                                 <a
-                                    href="/"
+                                    href="mailto:mark.mbdecor@gmail.com"
+                                    aria-label="Link to Email"
+                                    target="_blank"
                                     className="rounded-xl bg-secondary-mid/50 h-max w-max group hover:bg-secondary-mid/80 active:scale-90 transition-all p-4"
                                 >
-                                    <Facebook
+                                    <Mail 
                                         strokeWidth={1}
                                         className="w-8 h-8 group text-secondary-dark"
                                     />

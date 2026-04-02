@@ -20,7 +20,7 @@ export default function Footer() {
                     {/* Copyright */}
                     <div className="flex flex-col gap-2 items-center">
                         <span className="opacity-70 text-sm text-center">
-                            © {currentYear} MB Prestige Painting & Decor. All rights reserved.
+                            © {currentYear} MB Decor - Decorating Specialist. All rights reserved.
                         </span>
                         <a href="https://readwebstudio.co.uk" target="_blank" className="absolute bottom-4 opacity-70 text-xs text-center hover:underline">
                             Website by Read Web Studio
@@ -39,15 +39,7 @@ export default function Footer() {
                                 <Facebook style={{ fontSize: "32px" }} />
                             </Link>
                             <Link
-                                href=""
-                                aria-label="Link to Instagram"
-                                target="_blank"
-                                className="cursor-pointer"
-                            >
-                                <Instagram style={{ fontSize: "36px" }} />
-                            </Link>
-                            <Link
-                                href=""
+                                href="mailto:mark.mbdecor@gmail.com"
                                 aria-label="Link to Email"
                                 target="_blank"
                                 className="cursor-pointer"
@@ -55,7 +47,7 @@ export default function Footer() {
                                 <Mail style={{ fontSize: "32px" }} />
                             </Link>
                         </div>
-                        <p className="text-sm!">contact@mbprestige.co.uk</p>
+                        <p className="text-sm!">mark.mbdecor@gmail.com</p>
                     </div>
                 </div>
             </div>

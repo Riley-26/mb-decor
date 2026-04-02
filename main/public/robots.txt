@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://traditionaloakjoiners.uk/sitemap.xml
+Sitemap: https://mbdecoratingspecialist.co.uk/sitemap.xml
