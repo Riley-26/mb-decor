@@ -23,13 +23,13 @@ export default function ProjectImageCarousel({ images }: { images: CarouselImage
                 style={{ transform: `translateX(-${current * 100}%)` }}
             >
                 {images.map((image, i) => (
-                    <div key={i} className="relative w-full shrink-0 max-h-108">
+                    <div key={i} className="relative w-full shrink-0 max-h-72 md:max-h-108">
                         <Image
                             src={image.src}
                             alt={image.label ?? "Project image"}
-                            width={600}
-                            height={600}
-                            className="object-cover w-full"
+                            width={800}
+                            height={800}
+                            className="object-cover h-full brightness-90"
                         />
                         {image.label && (
                             <span className="absolute top-3 left-3 bg-secondary-dark text-white text-sm font-semibold px-3 py-1 rounded-md shadow-md uppercase tracking-wide">

@@ -2,7 +2,7 @@ import Navbar from "@/components/layout/Navbar"
 import Footer from "@/components/layout/Footer"
 import { Metadata } from "next"
 import Image from "next/image"
-import { CheckIcon, Facebook, MapPin } from "lucide-react"
+import { CheckIcon, Facebook, HouseIcon, MapPin, PaintbrushIcon } from "lucide-react"
 import React from "react"
 import ProjectImageCarousel from "@/components/layout/projects/ProjectImageCarousel"
 
@@ -16,49 +16,99 @@ const mainProjects = [
     {
         id: 1,
         title: "Holly Hill House",
-        description: "Elizabethan period home, in need of restoration to the exterior windows. Perfect paintwork whilst adhering to the laws of protected properties.",
-        location: "Harvel, Meopham",
+        description: "Elizabethan period home, was in need of restoration to the exterior windows. Perfect paintwork whilst adhering to the laws of protected properties, to restore the home to its former glory.",
+        location: "Meopham, Kent",
         images: [
-            { src: "/assets/about/about-hero.jpg", label: "Before" },
-            { src: "/assets/about/about-hero.jpg", label: "After" },
+            { src: "/assets/about/property.jpg", label: "After" },
+            { src: "/assets/projects/project1-imgbefore2.jpg", label: "Before" },
+            { src: "/assets/projects/project1-imgafter2.jpg", label: "After" },
+            { src: "/assets/projects/project1-imgbefore3.jpg", label: "Before" },
+            { src: "/assets/projects/project1-imgafter3.jpg", label: "After" },
+            { src: "/assets/projects/project1-imgbefore1.jpg", label: "Before" },
+            { src: "/assets/projects/project1-imgafter1.jpg", label: "After" },
         ],
         features: [
             {
-                icon: <CheckIcon className="w-6 h-6 text-secondary-mid" />,
-                label: "Lorem ipsum dolor sit amet.",
+                icon: <HouseIcon className="w-6 h-6 text-secondary-mid" />,
+                label: "Heritage",
             },
             {
-                icon: <CheckIcon className="w-6 h-6 text-secondary-mid" />,
-                label: "Lorem ipsum dolor sit amet.",
-            },
-            {
-                icon: <CheckIcon className="w-6 h-6 text-secondary-mid" />,
-                label: "Lorem ipsum dolor sit amet.",
+                icon: <PaintbrushIcon className="w-6 h-6 text-secondary-mid" />,
+                label: "Exterior",
             },
         ]
     },
     {
         id: 2,
-        title: "Project 2",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum tenetur vitae id est hic sed voluptatibus sint, labore odit. Debitis.",
+        title: "Kensington Flat Refurbishment",
+        description: "A prestigious flat on Gloucester Road, Kensington. Premium paint and materials used to modernise the property, earning its place in the heart of London.",
+        location: "Kensington, London",
         images: [
-            { src: "/assets/about/about-hero.jpg", label: "Before" },
-            { src: "/assets/services/commercial.jpg", label: "After" },
-            { src: "/assets/services/domestic.jpg", label: "After" },
-            { src: "/assets/services/exterior.jpg", label: "After" },
+            { src: "/assets/projects/project2-imgafter2.jpg", label: "After" },
+            { src: "/assets/projects/project2-imgbefore2.jpg", label: "Before" },
+            { src: "/assets/projects/project2-imgbefore3.jpg", label: "Before" },
+            { src: "/assets/projects/project2-imgafter3.jpg", label: "After" },
+            { src: "/assets/projects/project2-imgbefore1.jpg", label: "Before" },
+            { src: "/assets/projects/project2-imgafter1.jpg", label: "After" },
         ],
         features: [
             {
-                icon: <CheckIcon className="w-6 h-6 text-secondary-mid" />,
-                label: "Lorem ipsum dolor sit amet.",
+                icon: <HouseIcon className="w-6 h-6 text-secondary-mid" />,
+                label: "Domestic",
             },
             {
-                icon: <CheckIcon className="w-6 h-6 text-secondary-mid" />,
-                label: "Lorem ipsum dolor sit amet.",
+                icon: <PaintbrushIcon className="w-6 h-6 text-secondary-mid" />,
+                label: "Interior",
+            },
+        ]
+    },
+    {
+        id: 3,
+        title: "Downstairs Refurbishment",
+        description: "Kitchen, dining and living rooms repainted, along with many doors/frames. A complete modern overhaul of the downstairs of the property.",
+        location: "Kent",
+        images: [
+            { src: "/assets/projects/project3-imgafter1.jpg", label: "After" },
+            { src: "/assets/projects/project3-imgbefore2.jpg", label: "Before" },
+            { src: "/assets/projects/project3-imgafter2.jpg", label: "After" },
+            { src: "/assets/projects/project3-imgbefore3.jpg", label: "Before" },
+            { src: "/assets/projects/project3-imgafter3.jpg", label: "After" },
+            { src: "/assets/projects/project3-imgafter4.jpg", label: "After" },
+            { src: "/assets/projects/project3-imgafter5.jpg", label: "After" },
+        ],
+        features: [
+            {
+                icon: <HouseIcon className="w-6 h-6 text-secondary-mid" />,
+                label: "Domestic",
             },
             {
-                icon: <CheckIcon className="w-6 h-6 text-secondary-mid" />,
-                label: "Lorem ipsum dolor sit amet.",
+                icon: <PaintbrushIcon className="w-6 h-6 text-secondary-mid" />,
+                label: "Interior",
+            },
+        ]
+    },
+    {
+        id: 4,
+        title: "Windows Repair and Repaint",
+        description: "Exterior windows repaired and repainted, after years of built-up damage. Specialised paint and materials with exterior circumstances in mind.",
+        location: "Kent",
+        images: [
+            { src: "/assets/projects/project4-imgafter1.jpg", label: "After" },
+            { src: "/assets/projects/project4-imgbefore2.jpg", label: "Before" },
+            { src: "/assets/projects/project4-imgafter2.jpg", label: "After" },
+            { src: "/assets/projects/project4-imgbefore3.jpg", label: "Before" },
+            { src: "/assets/projects/project4-imgafter3.jpg", label: "After" },
+            { src: "/assets/projects/project4-imgbefore4.jpg", label: "Before" },
+            { src: "/assets/projects/project4-imgafter4.jpg", label: "After" },
+        ],
+        features: [
+            {
+                icon: <HouseIcon className="w-6 h-6 text-secondary-mid" />,
+                label: "Domestic",
+            },
+            {
+                icon: <PaintbrushIcon className="w-6 h-6 text-secondary-mid" />,
+                label: "Exterior",
             },
         ]
     },
@@ -68,12 +118,44 @@ const miscProjects = [
     {
         id: 1,
         title: "Project 1",
-        image: "/assets/about/about-hero.jpg",
+        images: [
+            { src: "/assets/projects/miscproject3-imgafter1.jpg", label: "After" },
+            { src: "/assets/projects/miscproject3-imgafter2.jpg", label: "After" },
+            { src: "/assets/projects/miscproject3-imgbefore3.jpg", label: "Before" },
+            { src: "/assets/projects/miscproject3-imgafter3.jpg", label: "After" },
+            { src: "/assets/projects/miscproject3-imgbefore4.jpg", label: "Before" },
+            { src: "/assets/projects/miscproject3-imgafter4.jpg", label: "After" },
+        ]
     },
     {
         id: 2,
         title: "Project 2",
-        image: "/assets/about/about-hero.jpg",
+        images: [
+            { src: "/assets/projects/miscproject4-imgafter1.jpg", label: "After" },
+            { src: "/assets/projects/miscproject4-imgbefore2.jpg", label: "Before" },
+            { src: "/assets/projects/miscproject4-imgafter2.jpg", label: "After" },
+            { src: "/assets/projects/miscproject4-imgafter3.jpg", label: "After" },
+        ]
+    },
+    {
+        id: 3,
+        title: "Project 3",
+        images: [
+            { src: "/assets/projects/miscproject1-imgafter1.jpg", label: "After" },
+            { src: "/assets/projects/miscproject1-imgbefore1.jpg", label: "Before" },
+            { src: "/assets/projects/miscproject1-imgbefore2.jpg", label: "Before" },
+            { src: "/assets/projects/miscproject1-imgafter2.jpg", label: "After" },
+        ]
+    },
+    {
+        id: 4,
+        title: "Project 4",
+        images: [
+            { src: "/assets/projects/miscproject2-imgafter1.jpg", label: "After" },
+            { src: "/assets/projects/miscproject2-imgbefore1.jpg", label: "Before" },
+            { src: "/assets/projects/miscproject2-imgbefore2.jpg", label: "Before" },
+            { src: "/assets/projects/miscproject2-imgafter2.jpg", label: "After" },
+        ]
     },
 ]
 
@@ -93,14 +175,14 @@ export default function ProjectsPage() {
                     <ul className="flex flex-col gap-32">
                         {
                             mainProjects.map((project) => (
-                                <li key={project.title} className="flex flex-col-reverse lg:flex-row justify-center items-center w-full max-w-xl lg:max-w-full gap-6 lg:gap-16 bg-secondary-light border-l-6 border-secondary-dark rounded-2xl px-4 lg:px-8 py-6 lg:py-4 xl:py-8 shadow-xl">
-                                    <div className="lg:w-1/2 flex flex-col gap-4 xl:gap-6">
+                                <li key={project.title} className="flex flex-col lg:flex-row justify-center lg:items-center w-full max-w-xl lg:max-w-full gap-6 lg:gap-16 bg-secondary-light border-l-6 border-secondary-dark rounded-2xl px-4 lg:px-8 py-6 lg:py-4 xl:py-8 shadow-xl">
+                                    <div className="lg:w-1/2 flex flex-col gap-4 xl:gap-6 ml-4 lg:ml-0">
                                         <span className="text-secondary-mid text-lg lg:text-xl xl:text-2xl font-medium">0{project.id}</span>
                                         <h2 className="text-2xl md:text-3xl xl:text-4xl">{project.title}</h2>
                                         <p className="text-lg md:text-xl">{project.description}</p>
                                         <div className="flex items-center gap-2">
                                             <MapPin className="w-5 h-5 text-secondary-mid" />
-                                            <p className="text-base md:text-lg">{project.location}</p>
+                                            <p className="text-sm md:text-base text-neutral-700">{project.location}</p>
                                         </div>
                                         <ul className="flex flex-col gap-4 mt-2">
                                             {
@@ -118,7 +200,7 @@ export default function ProjectsPage() {
                                             }
                                         </ul>
                                     </div>
-                                    <div className="lg:w-1/2">
+                                    <div className="lg:w-1/2 mt-6 lg:mt-0">
                                         <ProjectImageCarousel images={project.images} />
                                     </div>
                                 </li>
@@ -138,12 +220,8 @@ export default function ProjectsPage() {
                         {
                             miscProjects.map((project) => (
                                 <li key={project.title} className="flex justify-center items-center w-full">
-                                    <div className="shadow-xl rounded-2xl overflow-hidden relative group">
-                                        <Image src={project.image} alt={`Domestic Work ${project.id}`}  width={500} height={500} className="w-full object-cover z-30 group-hover:scale-105 group-active:scale-105 transition-all duration-200" />
-                                        <div className="flex flex-col items-center justify-center gap-4 w-full h-full bg-transparent opacity-0 absolute top-0 left-0 group-hover:opacity-100 group-hover:bg-black/70 transition-colors duration-100">
-                                            <p className="text-xl xl:text-3xl text-transparent z-50 group-hover:text-white transition-colors duration-200">{project.title}</p>
-                                            <a href="https://www.facebook.com/mbdecorUK" className="text-transparent z-50 group-hover:text-neutral-300 hover:bg-neutral-400/40 transition-colors duration-200 border-2 border-neutral-400 rounded-full p-2 cursor-pointer"><Facebook className="w-6 h-6" /></a>
-                                        </div>
+                                    <div className="w-full mt-6 lg:mt-0">
+                                        <ProjectImageCarousel images={project.images} />
                                     </div>
                                 </li>
                             ))
