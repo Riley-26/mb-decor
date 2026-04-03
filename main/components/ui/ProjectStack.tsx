@@ -8,30 +8,30 @@ import { ArrowRight, ChevronUp, ChevronDown } from "lucide-react"
 const projects = [
     {
         id: 1,
-        title: "Kensington Townhouse",
-        category: "Interior Painting",
+        title: "Holly Hill House",
+        category: "Exterior, Heritage",
         description:
-            "Full interior repaint of a five-bedroom Victorian townhouse. Every room finished to the highest standard with zero disruption to the family.",
-        href: "/projects/kensington-townhouse",
-        image: "/assets/home/hero1.jpg",
+            "Elizabethan period home, was in need of restoration to the exterior windows. Perfect paintwork whilst adhering to the laws of protected properties, to restore the home to its former glory.",
+        href: "/projects",
+        image: "/assets/about/property.jpg",
     },
     {
         id: 2,
-        title: "Surrey Country Estate",
-        category: "Exterior & Interior",
+        title: "Kensington Flat Refurbishment",
+        category: "Interior, Domestic",
         description:
-            "Complete exterior restoration and interior transformation of a Grade II listed country estate, preserving its heritage character.",
-        href: "/projects/surrey-estate",
-        image: "/assets/home/hero1.jpg",
+            "A prestigious flat on Gloucester Road, Kensington. Premium paint and materials used to modernise the property, earning its place in the heart of London.",
+        href: "/projects",
+        image: "/assets/projects/project2-imgafter2.jpg",
     },
     {
         id: 3,
-        title: "Canary Wharf Office",
-        category: "Commercial Interior",
+        title: "Downstairs Refurbishment",
+        category: "Interior, Domestic",
         description:
-            "Full fit-out repaint of a 12,000 sq ft commercial office space completed over a single weekend to avoid business disruption.",
-        href: "/projects/canary-wharf-office",
-        image: "/assets/home/hero1.jpg",
+            "Kitchen, dining and living rooms repainted, along with many doors/frames. A complete modern overhaul of the downstairs of the property.",
+        href: "/projects",
+        image: "/assets/projects/project3-imgafter1.jpg",
     },
 ]
 
@@ -116,15 +116,17 @@ export default function ProjectStack() {
                             }}
                         >
                             {/* Content — below image on mobile, left half on xl */}
-                            <div className="order-last xl:order-first xl:w-1/2 bg-secondary-light flex flex-col justify-between p-6 xl:p-10 min-h-0 h-full flex-1 gap-8">
+                            <div className="order-last xl:order-first xl:w-1/2 bg-secondary-light flex flex-col justify-between p-6 xl:p-10 min-h-0 h-full flex-1">
                                 {/* Number — standalone at top on xl only */}
-                                <span className="hidden xl:block text-3xl font-normal tracking-widest uppercase text-secondary-mid">
-                                    0{project.id}
-                                </span>
-                                <div className="flex flex-col gap-3 xl:gap-4">
+                                <div className="flex items-center gap-4 mb-4">
+                                    <span className="hidden xl:block text-3xl font-normal tracking-widest uppercase text-secondary-mid">
+                                        0{project.id}
+                                    </span>
                                     <span className="text-sm font-medium tracking-widest uppercase text-secondary-mid">
                                         {project.category}
                                     </span>
+                                </div>
+                                <div className="flex flex-col gap-3 xl:gap-4">
                                     <h3 className="text-primary-dark text-2xl xl:text-3xl leading-tight flex items-baseline gap-3">
                                         {/* Number — inline with title on mobile only */}
                                         <span className="xl:hidden text-xl font-normal tracking-widest text-secondary-mid shrink-0">
@@ -136,6 +138,7 @@ export default function ProjectStack() {
                                         {project.description}
                                     </p>
                                 </div>
+                                <hr className="border-secondary-mid/30 my-4" />
                                 <Link
                                     href={project.href}
                                     onClick={(e) => e.stopPropagation()}

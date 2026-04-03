@@ -33,7 +33,7 @@ export default function Home() {
                         </Reveal>
                         <hr className="border-none bg-neutral-200/60 w-full h-0.5 my-4 max-w-64 sm:max-w-full" />
                         <Reveal from="up" delay={0.2} className="hidden sm:flex flex-col sm:flex-row gap-4 w-max" >
-                            <Button size="lg" color="light" to="contact" roundSize="sm">
+                            <Button size="lg" color="light" to="/contact" roundSize="sm">
                                 Request a Quote
                             </Button>
                             <Button size="lg" variant="outline" color="secondaryLight" to="/projects" roundSize="sm">
@@ -41,7 +41,7 @@ export default function Home() {
                             </Button>
                         </Reveal>
                         <Reveal from="up" delay={0.4}>
-                            <Link href="/testimonials" className="hidden sm:block text-lg mt-2 text-neutral-300 underline hover:text-neutral-400 transition-colors text-left">Trusted by homeowners and <br className="sm:hidden" />businesses alike.</Link>
+                            <Link href="https://www.facebook.com/mbdecorUK" target="_blank" className="hidden sm:block text-lg mt-2 text-neutral-300 underline hover:text-neutral-400 transition-colors text-left">Trusted by homeowners and <br className="sm:hidden" />businesses alike.</Link>
                         </Reveal>
                         <div className="flex flex-col sm:hidden gap-2 w-max mx-auto" >
                             <Reveal from="up" delay={0.2} className="flex flex-col gap-2 w-max mx-auto">
@@ -219,7 +219,7 @@ export default function Home() {
                                     <div className="min-w-12 min-h-12 bg-secondary-mid/30 rounded-full text-secondary-mid flex items-center justify-center">
                                         <Clock className="text-base" />
                                     </div>
-                                    <p className="text-lg lg:text-xl">Over 20 years of experience - you are in safe hands.</p>
+                                    <p className="text-lg lg:text-xl">Over 25 years of experience - you are in safe hands.</p>
                                 </li>
                             </ul>
                         </Reveal>
@@ -260,31 +260,42 @@ export default function Home() {
                         <div className="hidden md:flex flex-col items-end justify-end relative gap-2 bg-primary-dark rounded-2xl p-4 min-w-64 2xl:min-w-72 h-48 xl:h-64 mx-2 lg:mx-0">
                             <QuoteIcon fill="currentColor" className="w-16 h-16 xl:w-24 xl:h-24 absolute top-4 right-4 text-secondary-mid opacity-20" />
                             <Reveal from="left" className="flex flex-col items-end">
-                                <p className="text-secondary-mid text-2xl 2xl:text-3xl text-center font-medium">John Doe</p>
-                                <p className="text-secondary-mid text-lg 2xl:text-xl text-center font-medium">London</p>
+                                <p className="text-secondary-mid text-2xl 2xl:text-3xl text-end font-medium">Michael S.</p>
+                                <p className="text-secondary-mid text-lg 2xl:text-xl text-end font-medium">Balham, London</p>
                             </Reveal>
                         </div>
                         <Reveal from="left" delay={0.2}>
                             <p className="text-primary-mid max-w-4xl rounded-2xl m-8 xl:text-2xl">
-                                &quot;Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem dolores quas ipsa dolorum earum accusantium asperiores consectetur architecto omnis veritatis excepturi at cumque vel consequuntur, sunt quos, labore itaque consequatur.&quot;
+                                &quot;
+                                Mark has worked on our family homes over a period of some decades.
+                                <br/>
+                                <br/>
+                                His prep work is always first class and the care he gives to final finishes is outstanding.
+                                <br/>
+                                <br/>
+                                We trust him implicitly and he is most considerate when it comes to leaving site in immaculate condition.
+                                <br/>
+                                <br/>
+                                You won't find a better painter and decorator. That's a fact.
+                                &quot;
                             </p>
                         </Reveal>
                         <Reveal from="left" className="flex flex-col md:hidden items-center justify-center mb-6">
-                            <p className="text-secondary-mid text-2xl 2xl:text-3xl text-center font-medium">John Doe</p>
-                            <p className="text-secondary-mid text-lg 2xl:text-xl text-center font-medium">London</p>
+                            <p className="text-secondary-mid text-2xl 2xl:text-3xl text-end font-medium">Michael S.</p>
+                            <p className="text-secondary-mid text-lg 2xl:text-xl text-end font-medium">Balham, London</p>
                         </Reveal>
                     </div>
                     <div className="hidden md:flex items-center justify-center w-full mx-auto gap-8">
                         <hr className="hidden xl:block w-24 border-none bg-secondary-mid/30 h-0.5" />
-                        <Button size="md" color="secondaryMid" to="/testimonials" roundSize="sm" className="w-max px-8!">
-                            View all testimonials
+                        <Button size="md" color="secondaryMid" to="https://www.facebook.com/mbdecorUK" roundSize="sm" className="w-max px-8!">
+                            View our facebook page
                         </Button>
                         <hr className="hidden xl:block w-24 border-none bg-secondary-mid/30 h-0.5" />
                     </div>
                     <div className="flex md:hidden items-center justify-center w-full mx-auto gap-8">
                         <hr className="block xl:hidden w-24 border-none bg-secondary-mid/30 h-0.5" />
-                        <Button size="sm" color="secondaryMid" to="/testimonials" roundSize="sm" className="w-max px-8!">
-                            View all testimonials
+                        <Button size="sm" color="secondaryMid" to="https://www.facebook.com/mbdecorUK" roundSize="sm" className="w-max px-8!">
+                            View our facebook page
                         </Button>
                         <hr className="block xl:hidden w-24 border-none bg-secondary-mid/30 h-0.5" />
                     </div>

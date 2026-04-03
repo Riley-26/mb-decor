@@ -150,10 +150,10 @@ export default function AboutPage() {
                             <AccordionItem name="Heritage Work">
                                 Requiring strict adherence to preservation guidelines. We have a wealth of experience in painting heritage properties and can ensure that your property is protected and maintained.
                             </AccordionItem>
-                            <Button size="md" color="primaryDark" to="/contact" roundSize="sm" className="w-max hidden md:block mx-auto lg:mx-0">
+                            <Button size="md" color="primaryDark" to="/projects" roundSize="sm" className="w-max hidden md:block mx-auto lg:mx-0">
                                 See Projects
                             </Button>
-                            <Button size="sm" color="primaryDark" to="/contact" roundSize="sm" className="w-max block md:hidden mx-auto">
+                            <Button size="sm" color="primaryDark" to="/projects" roundSize="sm" className="w-max block md:hidden mx-auto">
                                 See Projects
                             </Button>
                         </div>
