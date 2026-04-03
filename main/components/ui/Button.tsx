@@ -90,6 +90,8 @@ export default function Button({
                     onClick={() => {
                         if (to && to.slice(0, 1) === "/") {
                             window.location.href = to
+                        } else if (to && to.slice(0, 8) === "https://") {
+                            window.open(to, "_blank")
                         } else if (to) {
                             const el = document.getElementById(to)
                             if (el) {
@@ -107,6 +109,8 @@ export default function Button({
                     onClick={() => {
                         if (to && to.slice(0, 1) === "/") {
                             window.location.href = to
+                        } else if (to && to.slice(0, 8) === "https://") {
+                            window.open(to, "_blank")
                         } else if (to) {
                             const el = document.getElementById(to)
                             if (el) {
