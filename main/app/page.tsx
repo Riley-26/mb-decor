@@ -163,7 +163,7 @@ export default function Home() {
                     <div className="flex items-center justify-center xl:justify-start w-full gap-8">
                         <hr className="w-full max-w-24 border-none bg-secondary-mid/30 h-0.5" />
                         <Button size="md" color="secondaryMid" to="/services" roundSize="sm" className="w-max">
-                            View all services
+                            View our services
                         </Button>
                         <hr className="block xl:hidden w-full max-w-24 border-none bg-secondary-mid/30 h-0.5" />
                     </div>

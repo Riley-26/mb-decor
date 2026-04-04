@@ -15,13 +15,12 @@ export const sendFormData = (e: any) => {
     const email = formData.elements["email"]?.value || "";
     const subject = formData.elements["subject"]?.value || "";
     const message = formData.elements["message"]?.value || "";
-
     try {
         emailjs.send(
-            process.env.EMAILJS_SERVICE_ID || "",
-            process.env.EMAILJS_TEMPLATE_ID || "",
+            process.env.NEXT_PUBLIC_SERVICE_ID || "",
+            process.env.NEXT_PUBLIC_TEMPLATE_ID || "",
             { name: `${firstName} ${lastName}`, email, subject, message },
-            process.env.EMAILJS_PUBLIC_KEY || ""
+            process.env.NEXT_PUBLIC_PUBLIC_KEY || ""
         )
         alert("Message sent successfully")
     } catch (error) {
