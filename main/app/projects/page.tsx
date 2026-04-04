@@ -151,10 +151,13 @@ const miscProjects = [
         id: 4,
         title: "Project 4",
         images: [
-            { src: "/assets/projects/miscproject2-imgafter1.jpg", label: "After" },
-            { src: "/assets/projects/miscproject2-imgbefore1.jpg", label: "Before" },
-            { src: "/assets/projects/miscproject2-imgbefore2.jpg", label: "Before" },
-            { src: "/assets/projects/miscproject2-imgafter2.jpg", label: "After" },
+            { src: "/assets/projects/miscproject5-imgafter2.jpeg", label: "After" },
+            { src: "/assets/projects/miscproject5-imgbefore2.jpeg", label: "Before" },
+            { src: "/assets/projects/miscproject5-imgbefore3.jpeg", label: "Before" },
+            { src: "/assets/projects/miscproject5-imgafter3.jpeg", label: "After" },
+            { src: "/assets/projects/miscproject5-imgafter4.jpeg", label: "After" },
+            { src: "/assets/projects/miscproject5-imgafter6.jpeg", label: "After" },
+            { src: "/assets/projects/miscproject5-imgafter5.jpeg", label: "After" },
         ]
     },
 ]
