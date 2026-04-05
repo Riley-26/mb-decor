@@ -11,7 +11,7 @@ import Footer from "@/components/layout/Footer"
 import Reveal from "@/components/ui/Reveal"
 
 export const metadata: Metadata = {
-    title: "MB Decor",
+    title: "MB Decor - Decorating Specialist",
     description: "Home page",
 }
 

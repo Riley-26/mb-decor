@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import { useWindowSize } from "@/hooks/useWindowSize";
 import { AnimatePresence, motion } from "framer-motion";
 import NavBurger from "../ui/NavBurger";
+import Image from "next/image";
 
 type NavLink =
     | { label: string; href: string; dropdown?: never }
@@ -63,7 +64,7 @@ export default function Navbar() {
             </div>
             <nav className="fixed h-12 md:h-14 top-2 left-0 right-0 flex items-center justify-center px-6 md:px-8 z-100 rounded-full bg-neutral-100 w-max gap-24 md:gap-40 lg:gap-108 xl:gap-32 mx-auto border border-neutral-200 shadow-lg shadow-black/10">
                 <Link href="/">
-                    <p className="text-xl md:text-2xl font-dm-sans font-semibold tracking-tighter italic text-neutral-500">MB Decor Logo</p>
+                    <Image src="/Asset 8.svg" alt="MB Decor Logo" width={180} height={180} />
                 </Link>
                 <ul className="hidden xl:flex items-center gap-6 px-4 py-2 text-dark">
                     {

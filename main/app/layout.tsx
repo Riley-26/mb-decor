@@ -21,8 +21,11 @@ const ptSerif = PT_Serif({
 })
 
 export const metadata: Metadata = {
-    title: "Next Template",
+    title: "MB Decor",
     description: "Next Template",
+    icons: {
+        icon: "/Asset 11.svg",
+    }
 }
 
 export default function RootLayout({
