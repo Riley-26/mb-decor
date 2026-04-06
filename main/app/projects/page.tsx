@@ -7,9 +7,9 @@ import React from "react"
 import ProjectImageCarousel from "@/components/layout/projects/ProjectImageCarousel"
 
 export const metadata: Metadata = {
-    title: "Projects | MB Prestige Painting",
+    title: "Projects | MB Decor - Decorating Specialist",
     description:
-        "Projects MB Prestige Painting.",
+        "View our portfolio of projects. We have worked on many different types of properties, from heritage homes to modern houses.",
 }
 
 const mainProjects = [

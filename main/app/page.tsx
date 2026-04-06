@@ -1,6 +1,6 @@
 import { Metadata } from "next"
-import { } from "react"
-import { ArrowRight, QuoteIcon, PaintBucket, FlaskConicalOff, EarOff, Focus, Paintbrush, Clock, Sparkles } from "lucide-react"
+import { ArrowRight, PaintBucket, FlaskConicalOff, EarOff, Focus, Paintbrush, Clock, Sparkles } from "lucide-react"
+import TestimonialsCarousel from "@/components/ui/TestimonialsCarousel"
 import Button from "@/components/ui/Button"
 import Image from "next/image"
 import Navbar from "@/components/layout/Navbar"
@@ -12,7 +12,7 @@ import Reveal from "@/components/ui/Reveal"
 
 export const metadata: Metadata = {
     title: "MB Decor - Decorating Specialist",
-    description: "Home page",
+    description: "Prestige painting and decorating services in London and the South East.",
 }
 
 export default function Home() {
@@ -72,7 +72,7 @@ export default function Home() {
                         <div className="flex flex-col gap-6 md:gap-8">
                             <h2 className="text-primary-mid xl:max-w-lg 2xl:max-w-xl shrink-0 z-45">Specialist painting services - producing the perfect finish.</h2>
                             <p className="text-primary-mid max-w-3xl xl:max-w-md 2xl:max-w-lg z-45">Beautiful, premium results with tidiness in mind. The quality decoration that your house deserves.</p>
-                            <Link href="/about" className="text-primary-mid text-base sm:text-lg underline hover:text-primary-light transition-colors duration-75 w-max">Learn more</Link>
+                            <Link href="/services" className="text-primary-mid text-base sm:text-lg underline hover:text-primary-light transition-colors duration-75 w-max">Learn more</Link>
                         </div>
                         <div className="hidden xl:block absolute -right-48 2xl:-right-32 -top-8">
                             <Image alt="Value proposition image" src="/assets/home/stats-box.jpg" width={400} height={400} className="absolute right-0 object-cover h-124 w-124 rounded-full z-43 brightness-90" />
@@ -106,7 +106,7 @@ export default function Home() {
                         <div className="flex flex-col gap-8">
                             <h2 className="text-primary-mid xl:max-w-lg 2xl:max-w-xl shrink-0 z-45">Specialist painting services - producing the perfect finish.</h2>
                             <p className="text-primary-mid max-w-3xl xl:max-w-md 2xl:max-w-lg z-45">Beautiful, premium results with tidiness in mind. The quality decoration that your house deserves.</p>
-                            <Link href="/about" className="text-primary-mid text-lg underline hover:text-primary-light transition-colors duration-75 w-max">Learn more</Link>
+                            <Link href="/services" className="text-primary-mid text-lg underline hover:text-primary-light transition-colors duration-75 w-max">Learn more</Link>
                         </div>
                         <div className="hidden xl:block absolute -right-48 2xl:-right-32 -top-8">
                             <Image alt="Value proposition image" src="/assets/home/stats-box.jpg" width={400} height={400} className="absolute right-0 object-cover h-124 w-124 rounded-full z-43 brightness-90" />
@@ -250,49 +250,21 @@ export default function Home() {
             </section>
 
             {/* TESTIMONIAL SNIPPET */}
-            <section id="about" className="overflow-hidden py-16 min-h-180 flex flex-col xl:flex-row items-center justify-center relative bg-secondary-light/40 px-4 xl:px-0">
+            <section id="testimonials" className="overflow-hidden py-16 min-h-180 flex flex-col xl:flex-row items-center justify-center relative bg-secondary-light/40 px-4 xl:px-0">
                 <div className="z-40 container w-full flex flex-col items-center justify-center max-w-5xl xl:max-w-6xl">
                     <Reveal>
                         <h2 className="text-primary-mid text-center">Hear from some of our clients.</h2>
                     </Reveal>
                     <hr className="border-none bg-neutral-300/50 w-full max-w-xs h-0.5 my-8" />
-                    <div className="flex flex-col md:flex-row items-center gap-2 md:gap-6 bg-secondary-light rounded-2xl mb-8 border-b-4 md:border-b-0 md:border-r-4 border-primary-dark">
-                        <div className="hidden md:flex flex-col items-end justify-end relative gap-2 bg-primary-dark rounded-2xl p-4 min-w-64 2xl:min-w-72 h-48 xl:h-64 mx-2 lg:mx-0">
-                            <QuoteIcon fill="currentColor" className="w-16 h-16 xl:w-24 xl:h-24 absolute top-4 right-4 text-secondary-mid opacity-20" />
-                            <Reveal from="left" className="flex flex-col items-end">
-                                <p className="text-secondary-mid text-2xl 2xl:text-3xl text-end font-medium">Michael S.</p>
-                                <p className="text-secondary-mid text-lg 2xl:text-xl text-end font-medium">Balham, London</p>
-                            </Reveal>
-                        </div>
-                        <Reveal from="left" delay={0.2}>
-                            <p className="text-primary-mid max-w-4xl rounded-2xl m-8 xl:text-2xl">
-                                &quot;
-                                Mark has worked on our family homes over a period of some decades.
-                                <br/>
-                                <br/>
-                                His prep work is always first class and the care he gives to final finishes is outstanding.
-                                <br/>
-                                <br/>
-                                We trust him implicitly and he is most considerate when it comes to leaving site in immaculate condition.
-                                <br/>
-                                <br/>
-                                You won't find a better painter and decorator. That's a fact.
-                                &quot;
-                            </p>
-                        </Reveal>
-                        <Reveal from="left" className="flex flex-col md:hidden items-center justify-center mb-6">
-                            <p className="text-secondary-mid text-2xl 2xl:text-3xl text-end font-medium">Michael S.</p>
-                            <p className="text-secondary-mid text-lg 2xl:text-xl text-end font-medium">Balham, London</p>
-                        </Reveal>
-                    </div>
-                    <div className="hidden md:flex items-center justify-center w-full mx-auto gap-8">
+                    <TestimonialsCarousel />
+                    <div className="hidden md:flex items-center justify-center w-full mx-auto gap-8 mt-8">
                         <hr className="hidden xl:block w-24 border-none bg-secondary-mid/30 h-0.5" />
                         <Button size="md" color="secondaryMid" to="https://www.facebook.com/mbdecorUK" roundSize="sm" className="w-max px-8!">
                             View our facebook page
                         </Button>
                         <hr className="hidden xl:block w-24 border-none bg-secondary-mid/30 h-0.5" />
                     </div>
-                    <div className="flex md:hidden items-center justify-center w-full mx-auto gap-8">
+                    <div className="flex md:hidden items-center justify-center w-full mx-auto gap-8 mt-6">
                         <hr className="block xl:hidden w-24 border-none bg-secondary-mid/30 h-0.5" />
                         <Button size="sm" color="secondaryMid" to="https://www.facebook.com/mbdecorUK" roundSize="sm" className="w-max px-8!">
                             View our facebook page
@@ -303,7 +275,7 @@ export default function Home() {
             </section>
 
             {/* CTA */}
-            <section id="about" className="overflow-hidden py-24 min-h-180 sm:min-h-220 flex flex-col xl:flex-row items-center justify-center relative bg-secondary-light/70 px-4 xl:px-0">
+            <section id="contact" className="overflow-hidden py-24 min-h-180 sm:min-h-220 flex flex-col xl:flex-row items-center justify-center relative bg-secondary-light/70 px-4 xl:px-0">
                 <div className="z-40 container w-full flex justify-center gap-12 max-w-7xl relative">
                     <div className="flex flex-col items-center gap-6 z-30">
                         <h2 className="text-primary-mid mr-auto">Get in touch with us today.</h2>

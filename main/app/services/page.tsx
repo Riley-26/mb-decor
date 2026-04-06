@@ -6,9 +6,9 @@ import Image from "next/image"
 import Footer from "@/components/layout/Footer"
 
 export const metadata: Metadata = {
-    title: "Services | MB Prestige Painting",
+    title: "Services | MB Decor - Decorating Specialist",
     description:
-        "Services MB Prestige Painting.",
+        "Our services include interior and exterior painting, wallpaper removal and installation, including detail on the property types that we work on.",
 }
 
 export default function ServicesPage() {

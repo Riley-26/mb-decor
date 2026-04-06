@@ -8,13 +8,13 @@ export default function Footer() {
     return (
         <footer className="relative bg-black border-t border-neutral-800/50 pb-12 pt-8 px-4 z-50 text-light">
             <div className="max-w-6xl mx-auto">
-                <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+                <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-4">
                     {/* Brand */}
                     <Link
                         href={"/"}
                         aria-label="Link to home page"
                         className="flex gap-4 justify-center items-center">
-                        <p className="text-2xl font-dm-sans font-semibold tracking-tighter italic text-neutral-500">MB Decor Logo</p>
+                        <Image src="/mbdecor-logo-light-long.svg" alt="MB Decor Logo" width={320} height={320} />
                     </Link>
 
                     {/* Copyright */}
@@ -28,7 +28,7 @@ export default function Footer() {
                     </div>
 
                     {/* Social */}
-                    <div className="flex flex-col gap-2 items-center">
+                    <div className="flex flex-col gap-2 items-center mb-4 md:mb-0">
                         <div className="flex items-center justify-center gap-3">
                             <Link
                                 href="https://www.facebook.com/mbdecorUK"

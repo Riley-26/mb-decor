@@ -9,9 +9,9 @@ import Footer from "@/components/layout/Footer"
 import Reveal from "@/components/ui/Reveal"
 
 export const metadata: Metadata = {
-    title: "About Us | MB Prestige Painting",
+    title: "About Us | MB Decor - Decorating Specialist",
     description:
-        "About MB Prestige Painting.",
+        "With 25+ years of experience, we provide high-end painting and decorating services for domestic, commercial and heritage properties.",
 }
 
 export default function AboutPage() {

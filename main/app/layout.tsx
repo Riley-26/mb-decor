@@ -21,10 +21,10 @@ const ptSerif = PT_Serif({
 })
 
 export const metadata: Metadata = {
-    title: "MB Decor",
-    description: "Next Template",
+    title: "MB Decor - Decorating Specialist",
+    description: "Prestige painting and decorating services in London and the South East.",
     icons: {
-        icon: "/Asset 11.svg",
+        icon: "/icon.png",
     }
 }
 

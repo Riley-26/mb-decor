@@ -5,8 +5,8 @@ import { Facebook, Link, Mail } from "lucide-react"
 import ContactSection from "@/components/sections/ContactSection"
 
 export const metadata: Metadata = {
-    title: "Contact Us | MB Prestige Painting",
-    description: "Contact MB Prestige Painting.",
+    title: "Contact Us | MB Decor - Decorating Specialist",
+    description: "Contact us today for a free quote. We cover London, Kent and the South East.",
 }
 
 export default function ContactPage() {
@@ -64,7 +64,9 @@ export default function ContactPage() {
                             </div>
                             <div className="flex justify-center xl:justify-start items-center gap-4 mb-8 xl:mb-0">
                                 <a
-                                    href="/"
+                                    href="https://www.facebook.com/mbdecorUK"
+                                    aria-label="Link to Facebook"
+                                    target="_blank"
                                     className="rounded-xl bg-secondary-mid/50 h-max w-max group hover:bg-secondary-mid/80 active:scale-90 transition-all p-4"
                                 >
                                     <Facebook
